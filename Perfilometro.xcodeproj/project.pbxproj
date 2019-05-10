@@ -14,6 +14,8 @@
 		AD750BB3226FEF8200140400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD750BB1226FEF8200140400 /* LaunchScreen.storyboard */; };
 		AD750BBE226FEF8200140400 /* PerfilometroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BBD226FEF8200140400 /* PerfilometroTests.swift */; };
 		AD750BC9226FEF8200140400 /* PerfilometroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BC8226FEF8200140400 /* PerfilometroUITests.swift */; };
+		ADE3F7B4228515EF0094A699 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */; };
+		ADE3F7B622852A250094A699 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3F7B522852A250094A699 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		AD750BC4226FEF8200140400 /* PerfilometroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfilometroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD750BC8226FEF8200140400 /* PerfilometroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilometroUITests.swift; sourceTree = "<group>"; };
 		AD750BCA226FEF8200140400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		ADE3F7B522852A250094A699 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,10 @@
 		AD750BA7226FEF8000140400 /* Perfilometro */ = {
 			isa = PBXGroup;
 			children = (
-				AD750BA8226FEF8000140400 /* AppDelegate.swift */,
-				AD750BAA226FEF8000140400 /* ViewController.swift */,
-				AD750BAC226FEF8000140400 /* Main.storyboard */,
-				AD750BAF226FEF8200140400 /* Assets.xcassets */,
-				AD750BB1226FEF8200140400 /* LaunchScreen.storyboard */,
+				ADE3F7B0228515770094A699 /* Network */,
+				ADE3F7AF228515580094A699 /* View */,
+				ADE3F7AE228515500094A699 /* Controller */,
+				ADE3F7AD228515370094A699 /* Core */,
 				AD750BB4226FEF8200140400 /* Info.plist */,
 			);
 			path = Perfilometro;
@@ -123,6 +126,57 @@
 				AD750BCA226FEF8200140400 /* Info.plist */,
 			);
 			path = PerfilometroUITests;
+			sourceTree = "<group>";
+		};
+		ADE3F7AD228515370094A699 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AD750BB1226FEF8200140400 /* LaunchScreen.storyboard */,
+				AD750BAF226FEF8200140400 /* Assets.xcassets */,
+				AD750BA8226FEF8000140400 /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		ADE3F7AE228515500094A699 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD750BAA226FEF8000140400 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ADE3F7AF228515580094A699 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD750BAC226FEF8000140400 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADE3F7B0228515770094A699 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				ADE3F7B2228515C30094A699 /* Bluetooth */,
+				ADE3F7B1228515AE0094A699 /* Http */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		ADE3F7B1228515AE0094A699 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		ADE3F7B2228515C30094A699 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */,
+				ADE3F7B522852A250094A699 /* NetworkManager.swift */,
+			);
+			path = Bluetooth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +310,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE3F7B622852A250094A699 /* NetworkManager.swift in Sources */,
 				AD750BAB226FEF8000140400 /* ViewController.swift in Sources */,
+				ADE3F7B4228515EF0094A699 /* BluetoothManager.swift in Sources */,
 				AD750BA9226FEF8000140400 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
