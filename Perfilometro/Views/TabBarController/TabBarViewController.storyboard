@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bgH-3g-Mb0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,19 +9,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="uiG-uE-qDu">
             <objects>
-                <tabBarController id="bgH-3g-Mb0" sceneMemberID="viewController">
+                <tabBarController id="bgH-3g-Mb0" customClass="TabBarViewController" customModule="Perfilometro" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BSc-VM-rFp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="5lM-UP-MbC" kind="relationship" relationship="viewControllers" id="Pwy-rP-HMD"/>
-                        <segue destination="VeI-wG-L4z" kind="relationship" relationship="viewControllers" id="MJ8-bA-TLJ"/>
-                        <segue destination="ANc-Az-HPE" kind="relationship" relationship="viewControllers" id="AQP-0m-JEr"/>
+                        <segue destination="ET1-xF-3jX" kind="relationship" relationship="viewControllers" id="bL5-ae-6Yj"/>
+                        <segue destination="7nf-eS-hYJ" kind="relationship" relationship="viewControllers" id="Pri-xe-rph"/>
+                        <segue destination="xIg-6t-me4" kind="relationship" relationship="viewControllers" id="yhe-Lo-pBR"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dvl-Wm-N9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -29,34 +29,34 @@
             <point key="canvasLocation" x="-314" y="-136"/>
         </scene>
         <!--CalibrateView-->
-        <scene sceneID="gL6-nK-1xJ">
+        <scene sceneID="J8X-Qi-ted">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="CalibrateView" storyboardName="CalibrateView" id="5lM-UP-MbC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calibrar" id="gO2-pu-IC4"/>
+                <viewControllerPlaceholder storyboardName="CalibrateView" id="ET1-xF-3jX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Calibrar" id="y8S-Hi-0WU"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="U3G-Ys-ZkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6C4-Jj-awx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773" y="-186"/>
+            <point key="canvasLocation" x="437" y="-198"/>
         </scene>
         <!--TraceRouteView-->
-        <scene sceneID="CJg-vm-EzV">
+        <scene sceneID="n4L-0K-FgI">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="TraceRouteView" storyboardName="TraceRouteView" id="VeI-wG-L4z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Traçar Rota" id="T6y-34-6ND"/>
+                <viewControllerPlaceholder storyboardName="TraceRouteView" id="7nf-eS-hYJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trace Route" id="8N0-no-gA2"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f6D-id-CEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ug0-Tc-3Gi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785" y="-137"/>
+            <point key="canvasLocation" x="448" y="-137"/>
         </scene>
         <!--ResultsView-->
-        <scene sceneID="pK3-CQ-98u">
+        <scene sceneID="877-u3-X9X">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="ResultsView" storyboardName="ResultsView" id="ANc-Az-HPE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Resultados" id="NsZ-Fw-qKx"/>
+                <viewControllerPlaceholder storyboardName="ResultsView" id="xIg-6t-me4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Results" id="5Cl-Ff-3fB"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rRy-Ap-E3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gm3-O6-lfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="-83"/>
+            <point key="canvasLocation" x="429" y="-77"/>
         </scene>
     </scenes>
 </document>
