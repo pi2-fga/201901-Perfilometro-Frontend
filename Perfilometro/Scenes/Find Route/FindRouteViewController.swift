@@ -96,6 +96,13 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
         mapView.delegate = self
+        
+        do {
+            if let styleURL = Bundle.main.url(forResource: "mapStyle", withExtension: "json") {
+                mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+            } else { NSLog("Unable to find style.json") }
+        } catch { NSLog("One or more of the map styles failed to load. \(error)") }
+        
         self.mapView.addSubview(mapView)
     }
     
@@ -110,13 +117,13 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
         }
     }
     
-    private func createMarkerView() {
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
-    }
+//    private func createMarkerView() {
+//        let marker = GMSMarker()
+//        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
+//        marker.title = "Sydney"
+//        marker.snippet = "Australia"
+//        marker.map = mapView
+//    }
 }
 
     
@@ -139,4 +146,22 @@ extension FindRouteViewController: CLLocationManagerDelegate {
         
         locationManager.stopUpdatingLocation()
     }
+}
+
+extension FindRouteViewController: GMSAutocompleteResultsViewControllerDelegate {
+    
+    func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didAutocompleteWith place: GMSPlace) { }
+    
+    func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didFailAutocompleteWithError error: Error) { }
+    
+    // Turn the network activity indicator on and off again.
+    
+    func didRequestAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    
+    func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
+    
 }

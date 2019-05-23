@@ -25,6 +25,7 @@
 		AD90236722924C0000AE7D78 /* FindRouteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90236122924C0000AE7D78 /* FindRouteInteractor.swift */; };
 		ADD936C02292F1D800342FFF /* FindRouteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD936BF2292F1D800342FFF /* FindRouteView.storyboard */; };
 		ADE3F7B4228515EF0094A699 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */; };
+		ADE7BDBF2296DDCA003784EC /* mapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = ADE7BDBE2296DDCA003784EC /* mapStyle.json */; };
 		B45F47A0CCEBD7636AEED256 /* Pods_PerfilometroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2F2D34545E78830FDEEFDE /* Pods_PerfilometroUITests.framework */; };
 		BC47AEA0E4E973051BE73DF7 /* Pods_PerfilometroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221B224A1745F79087B26B9B /* Pods_PerfilometroTests.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,7 @@
 		AD90236122924C0000AE7D78 /* FindRouteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRouteInteractor.swift; sourceTree = "<group>"; };
 		ADD936BF2292F1D800342FFF /* FindRouteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindRouteView.storyboard; sourceTree = "<group>"; };
 		ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		ADE7BDBE2296DDCA003784EC /* mapStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapStyle.json; sourceTree = "<group>"; };
 		C0F666EDA2184A060E609518 /* Pods-PerfilometroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroUITests.debug.xcconfig"; path = "Target Support Files/Pods-PerfilometroUITests/Pods-PerfilometroUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 		AD750BA7226FEF8000140400 /* Perfilometro */ = {
 			isa = PBXGroup;
 			children = (
+				ADE7BDBC2296DC7D003784EC /* Helpers */,
 				AD90231A229240DD00AE7D78 /* Scenes */,
 				AD9023192292405200AE7D78 /* TabBar */,
 				ADE3F7B0228515770094A699 /* Network */,
@@ -255,6 +258,22 @@
 				ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */,
 			);
 			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		ADE7BDBC2296DC7D003784EC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				ADE7BDBD2296DC84003784EC /* Map */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		ADE7BDBD2296DC84003784EC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				ADE7BDBE2296DDCA003784EC /* mapStyle.json */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		AE9C129B63D0FAA31C0C05D6 /* Frameworks */ = {
@@ -378,6 +397,7 @@
 			files = (
 				AD750BB3226FEF8200140400 /* LaunchScreen.storyboard in Resources */,
 				AD9023182292403700AE7D78 /* TabBarViewController.storyboard in Resources */,
+				ADE7BDBF2296DDCA003784EC /* mapStyle.json in Resources */,
 				ADD936C02292F1D800342FFF /* FindRouteView.storyboard in Resources */,
 				AD750BB0226FEF8200140400 /* Assets.xcassets in Resources */,
 			);
