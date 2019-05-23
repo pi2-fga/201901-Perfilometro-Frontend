@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D99324C1979045CBDA729B6 /* Pods_Perfilometro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A03F525EDDF701FCEF06C52E /* Pods_Perfilometro.framework */; };
 		AD750BA9226FEF8000140400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BA8226FEF8000140400 /* AppDelegate.swift */; };
 		AD750BAB226FEF8000140400 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BAA226FEF8000140400 /* ViewController.swift */; };
-		AD750BAE226FEF8000140400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD750BAC226FEF8000140400 /* Main.storyboard */; };
 		AD750BB0226FEF8200140400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD750BAF226FEF8200140400 /* Assets.xcassets */; };
 		AD750BB3226FEF8200140400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD750BB1226FEF8200140400 /* LaunchScreen.storyboard */; };
 		AD750BBE226FEF8200140400 /* PerfilometroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BBD226FEF8200140400 /* PerfilometroTests.swift */; };
 		AD750BC9226FEF8200140400 /* PerfilometroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BC8226FEF8200140400 /* PerfilometroUITests.swift */; };
+		AD9023182292403700AE7D78 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9023172292403700AE7D78 /* TabBarViewController.storyboard */; };
+		AD9023582292444100AE7D78 /* HTTPNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9023572292444100AE7D78 /* HTTPNetworkManager.swift */; };
+		AD90235A229246F800AE7D78 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD902359229246F800AE7D78 /* Endpoint.swift */; };
+		AD90236222924C0000AE7D78 /* FindRoutePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90235C22924C0000AE7D78 /* FindRoutePresenter.swift */; };
+		AD90236322924C0000AE7D78 /* FindRouteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90235D22924C0000AE7D78 /* FindRouteWorker.swift */; };
+		AD90236422924C0000AE7D78 /* FindRouteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90235E22924C0000AE7D78 /* FindRouteRouter.swift */; };
+		AD90236522924C0000AE7D78 /* FindRouteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90235F22924C0000AE7D78 /* FindRouteModels.swift */; };
+		AD90236622924C0000AE7D78 /* FindRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90236022924C0000AE7D78 /* FindRouteViewController.swift */; };
+		AD90236722924C0000AE7D78 /* FindRouteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90236122924C0000AE7D78 /* FindRouteInteractor.swift */; };
+		ADD936C02292F1D800342FFF /* FindRouteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD936BF2292F1D800342FFF /* FindRouteView.storyboard */; };
 		ADE3F7B4228515EF0094A699 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */; };
-		ADE3F7B622852A250094A699 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3F7B522852A250094A699 /* NetworkManager.swift */; };
+		B45F47A0CCEBD7636AEED256 /* Pods_PerfilometroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2F2D34545E78830FDEEFDE /* Pods_PerfilometroUITests.framework */; };
+		BC47AEA0E4E973051BE73DF7 /* Pods_PerfilometroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221B224A1745F79087B26B9B /* Pods_PerfilometroTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +47,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		221B224A1745F79087B26B9B /* Pods_PerfilometroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfilometroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A1F7F8F76C857DBF9526426 /* Pods-Perfilometro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perfilometro.release.xcconfig"; path = "Target Support Files/Pods-Perfilometro/Pods-Perfilometro.release.xcconfig"; sourceTree = "<group>"; };
+		42CF3C8F3DF8F4BD42C49D41 /* Pods-PerfilometroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroTests.release.xcconfig"; path = "Target Support Files/Pods-PerfilometroTests/Pods-PerfilometroTests.release.xcconfig"; sourceTree = "<group>"; };
+		5540FBEE15A44F28B2A8D9AD /* Pods-PerfilometroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroTests.debug.xcconfig"; path = "Target Support Files/Pods-PerfilometroTests/Pods-PerfilometroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5852E2942D11A00F26FDCC37 /* Pods-PerfilometroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroUITests.release.xcconfig"; path = "Target Support Files/Pods-PerfilometroUITests/Pods-PerfilometroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D2F2D34545E78830FDEEFDE /* Pods_PerfilometroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfilometroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		623911F074DB2244D1520F36 /* Pods-Perfilometro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perfilometro.debug.xcconfig"; path = "Target Support Files/Pods-Perfilometro/Pods-Perfilometro.debug.xcconfig"; sourceTree = "<group>"; };
+		A03F525EDDF701FCEF06C52E /* Pods_Perfilometro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Perfilometro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD750BA5226FEF8000140400 /* Perfilometro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Perfilometro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD750BA8226FEF8000140400 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD750BAA226FEF8000140400 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AD750BAD226FEF8000140400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD750BAF226FEF8200140400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD750BB2226FEF8200140400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD750BB4226FEF8200140400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +67,18 @@
 		AD750BC4226FEF8200140400 /* PerfilometroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfilometroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD750BC8226FEF8200140400 /* PerfilometroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilometroUITests.swift; sourceTree = "<group>"; };
 		AD750BCA226FEF8200140400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD9023172292403700AE7D78 /* TabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
+		AD9023572292444100AE7D78 /* HTTPNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPNetworkManager.swift; sourceTree = "<group>"; };
+		AD902359229246F800AE7D78 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		AD90235C22924C0000AE7D78 /* FindRoutePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRoutePresenter.swift; sourceTree = "<group>"; };
+		AD90235D22924C0000AE7D78 /* FindRouteWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRouteWorker.swift; sourceTree = "<group>"; };
+		AD90235E22924C0000AE7D78 /* FindRouteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRouteRouter.swift; sourceTree = "<group>"; };
+		AD90235F22924C0000AE7D78 /* FindRouteModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRouteModels.swift; sourceTree = "<group>"; };
+		AD90236022924C0000AE7D78 /* FindRouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRouteViewController.swift; sourceTree = "<group>"; };
+		AD90236122924C0000AE7D78 /* FindRouteInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRouteInteractor.swift; sourceTree = "<group>"; };
+		ADD936BF2292F1D800342FFF /* FindRouteView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindRouteView.storyboard; sourceTree = "<group>"; };
 		ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
-		ADE3F7B522852A250094A699 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C0F666EDA2184A060E609518 /* Pods-PerfilometroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroUITests.debug.xcconfig"; path = "Target Support Files/Pods-PerfilometroUITests/Pods-PerfilometroUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D99324C1979045CBDA729B6 /* Pods_Perfilometro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC47AEA0E4E973051BE73DF7 /* Pods_PerfilometroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +102,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45F47A0CCEBD7636AEED256 /* Pods_PerfilometroUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		685629897F3E739CEDAE08EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				623911F074DB2244D1520F36 /* Pods-Perfilometro.debug.xcconfig */,
+				2A1F7F8F76C857DBF9526426 /* Pods-Perfilometro.release.xcconfig */,
+				5540FBEE15A44F28B2A8D9AD /* Pods-PerfilometroTests.debug.xcconfig */,
+				42CF3C8F3DF8F4BD42C49D41 /* Pods-PerfilometroTests.release.xcconfig */,
+				C0F666EDA2184A060E609518 /* Pods-PerfilometroUITests.debug.xcconfig */,
+				5852E2942D11A00F26FDCC37 /* Pods-PerfilometroUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AD750B9C226FEF8000140400 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +129,8 @@
 				AD750BBC226FEF8200140400 /* PerfilometroTests */,
 				AD750BC7226FEF8200140400 /* PerfilometroUITests */,
 				AD750BA6226FEF8000140400 /* Products */,
+				685629897F3E739CEDAE08EE /* Pods */,
+				AE9C129B63D0FAA31C0C05D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +147,10 @@
 		AD750BA7226FEF8000140400 /* Perfilometro */ = {
 			isa = PBXGroup;
 			children = (
+				AD90231A229240DD00AE7D78 /* Scenes */,
+				AD9023192292405200AE7D78 /* TabBar */,
 				ADE3F7B0228515770094A699 /* Network */,
-				ADE3F7AF228515580094A699 /* View */,
-				ADE3F7AE228515500094A699 /* Controller */,
-				ADE3F7AD228515370094A699 /* Core */,
+				ADE3F7AD228515370094A699 /* Supporting Files */,
 				AD750BB4226FEF8200140400 /* Info.plist */,
 			);
 			path = Perfilometro;
@@ -128,55 +174,97 @@
 			path = PerfilometroUITests;
 			sourceTree = "<group>";
 		};
-		ADE3F7AD228515370094A699 /* Core */ = {
+		AD9023192292405200AE7D78 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AD9023172292403700AE7D78 /* TabBarViewController.storyboard */,
+				AD750BAA226FEF8000140400 /* ViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		AD90231A229240DD00AE7D78 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AD90236822924C0D00AE7D78 /* Find Route */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AD90235B2292470200AE7D78 /* Enpoints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enpoints;
+			sourceTree = "<group>";
+		};
+		AD90236822924C0D00AE7D78 /* Find Route */ = {
+			isa = PBXGroup;
+			children = (
+				ADD936BC2292F0D300342FFF /* View */,
+				AD90235C22924C0000AE7D78 /* FindRoutePresenter.swift */,
+				AD90235D22924C0000AE7D78 /* FindRouteWorker.swift */,
+				AD90235E22924C0000AE7D78 /* FindRouteRouter.swift */,
+				AD90235F22924C0000AE7D78 /* FindRouteModels.swift */,
+				AD90236022924C0000AE7D78 /* FindRouteViewController.swift */,
+				AD90236122924C0000AE7D78 /* FindRouteInteractor.swift */,
+			);
+			path = "Find Route";
+			sourceTree = "<group>";
+		};
+		ADD936BC2292F0D300342FFF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ADD936BF2292F1D800342FFF /* FindRouteView.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ADE3F7AD228515370094A699 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				AD750BB1226FEF8200140400 /* LaunchScreen.storyboard */,
 				AD750BAF226FEF8200140400 /* Assets.xcassets */,
 				AD750BA8226FEF8000140400 /* AppDelegate.swift */,
 			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		ADE3F7AE228515500094A699 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				AD750BAA226FEF8000140400 /* ViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		ADE3F7AF228515580094A699 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				AD750BAC226FEF8000140400 /* Main.storyboard */,
-			);
-			path = View;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		ADE3F7B0228515770094A699 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 				ADE3F7B2228515C30094A699 /* Bluetooth */,
-				ADE3F7B1228515AE0094A699 /* Http */,
+				ADE3F7B1228515AE0094A699 /* HTTP */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		ADE3F7B1228515AE0094A699 /* Http */ = {
+		ADE3F7B1228515AE0094A699 /* HTTP */ = {
 			isa = PBXGroup;
 			children = (
+				AD90235B2292470200AE7D78 /* Enpoints */,
+				AD9023572292444100AE7D78 /* HTTPNetworkManager.swift */,
+				AD902359229246F800AE7D78 /* Endpoint.swift */,
 			);
-			path = Http;
+			path = HTTP;
 			sourceTree = "<group>";
 		};
 		ADE3F7B2228515C30094A699 /* Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
 				ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */,
-				ADE3F7B522852A250094A699 /* NetworkManager.swift */,
 			);
 			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		AE9C129B63D0FAA31C0C05D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A03F525EDDF701FCEF06C52E /* Pods_Perfilometro.framework */,
+				221B224A1745F79087B26B9B /* Pods_PerfilometroTests.framework */,
+				5D2F2D34545E78830FDEEFDE /* Pods_PerfilometroUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD750BCD226FEF8200140400 /* Build configuration list for PBXNativeTarget "Perfilometro" */;
 			buildPhases = (
+				167D86F2C6D159D2BEC8FC81 /* [CP] Check Pods Manifest.lock */,
 				AD750BA1226FEF8000140400 /* Sources */,
 				AD750BA2226FEF8000140400 /* Frameworks */,
 				AD750BA3226FEF8000140400 /* Resources */,
+				651A3639418B4E90C1767BE5 /* [CP] Embed Pods Frameworks */,
+				3BE73ABCE3A01261F48D1FDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +294,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD750BD0226FEF8200140400 /* Build configuration list for PBXNativeTarget "PerfilometroTests" */;
 			buildPhases = (
+				2531BBD464B01BB043DF1B5A /* [CP] Check Pods Manifest.lock */,
 				AD750BB5226FEF8200140400 /* Sources */,
 				AD750BB6226FEF8200140400 /* Frameworks */,
 				AD750BB7226FEF8200140400 /* Resources */,
@@ -221,6 +313,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD750BD3226FEF8200140400 /* Build configuration list for PBXNativeTarget "PerfilometroUITests" */;
 			buildPhases = (
+				FA259FF4DDBB7AF3E376945B /* [CP] Check Pods Manifest.lock */,
 				AD750BC0226FEF8200140400 /* Sources */,
 				AD750BC1226FEF8200140400 /* Frameworks */,
 				AD750BC2226FEF8200140400 /* Resources */,
@@ -284,8 +377,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD750BB3226FEF8200140400 /* LaunchScreen.storyboard in Resources */,
+				AD9023182292403700AE7D78 /* TabBarViewController.storyboard in Resources */,
+				ADD936C02292F1D800342FFF /* FindRouteView.storyboard in Resources */,
 				AD750BB0226FEF8200140400 /* Assets.xcassets in Resources */,
-				AD750BAE226FEF8000140400 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,15 +399,137 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		167D86F2C6D159D2BEC8FC81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Perfilometro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2531BBD464B01BB043DF1B5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PerfilometroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BE73ABCE3A01261F48D1FDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		651A3639418B4E90C1767BE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA259FF4DDBB7AF3E376945B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PerfilometroUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD750BA1226FEF8000140400 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE3F7B622852A250094A699 /* NetworkManager.swift in Sources */,
+				AD9023582292444100AE7D78 /* HTTPNetworkManager.swift in Sources */,
+				AD90236422924C0000AE7D78 /* FindRouteRouter.swift in Sources */,
+				AD90236522924C0000AE7D78 /* FindRouteModels.swift in Sources */,
+				AD90236622924C0000AE7D78 /* FindRouteViewController.swift in Sources */,
 				AD750BAB226FEF8000140400 /* ViewController.swift in Sources */,
 				ADE3F7B4228515EF0094A699 /* BluetoothManager.swift in Sources */,
+				AD90235A229246F800AE7D78 /* Endpoint.swift in Sources */,
 				AD750BA9226FEF8000140400 /* AppDelegate.swift in Sources */,
+				AD90236322924C0000AE7D78 /* FindRouteWorker.swift in Sources */,
+				AD90236222924C0000AE7D78 /* FindRoutePresenter.swift in Sources */,
+				AD90236722924C0000AE7D78 /* FindRouteInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,14 +565,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AD750BAC226FEF8000140400 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD750BAD226FEF8000140400 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AD750BB1226FEF8200140400 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -486,6 +694,7 @@
 		};
 		AD750BCE226FEF8200140400 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 623911F074DB2244D1520F36 /* Pods-Perfilometro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +713,7 @@
 		};
 		AD750BCF226FEF8200140400 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A1F7F8F76C857DBF9526426 /* Pods-Perfilometro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +732,7 @@
 		};
 		AD750BD1226FEF8200140400 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5540FBEE15A44F28B2A8D9AD /* Pods-PerfilometroTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -543,6 +754,7 @@
 		};
 		AD750BD2226FEF8200140400 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42CF3C8F3DF8F4BD42C49D41 /* Pods-PerfilometroTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -564,6 +776,7 @@
 		};
 		AD750BD4226FEF8200140400 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F666EDA2184A060E609518 /* Pods-PerfilometroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -584,6 +797,7 @@
 		};
 		AD750BD5226FEF8200140400 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5852E2942D11A00F26FDCC37 /* Pods-PerfilometroUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
