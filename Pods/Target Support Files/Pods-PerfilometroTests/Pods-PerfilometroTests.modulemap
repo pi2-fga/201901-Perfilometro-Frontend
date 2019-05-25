@@ -1,0 +1,6 @@
+framework module Pods_PerfilometroTests {
+  umbrella header "Pods-PerfilometroTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

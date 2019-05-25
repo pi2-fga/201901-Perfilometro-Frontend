@@ -8,6 +8,8 @@ target 'Perfilometro' do
   # Pods for Perfilometro
 
   pod 'Alamofire', '~> 5.0.0-beta.5'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
   target 'PerfilometroTests' do
     inherit! :search_paths
