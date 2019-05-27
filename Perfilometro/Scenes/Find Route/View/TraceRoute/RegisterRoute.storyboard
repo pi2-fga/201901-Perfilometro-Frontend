@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oYo-m7-9VH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="O5S-rU-2Z4">
+            <objects>
+                <viewController storyboardIdentifier="RegisterRoute" id="oYo-m7-9VH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6AR-8I-sAS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome da rota" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jxi-hz-K52">
+                                <rect key="frame" x="16" y="53" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jxi-hz-K52" secondAttribute="height" multiplier="343:30" id="7m7-DF-RIc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="0Bu-1J-cQk">
+                                <rect key="frame" x="0.0" y="211" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Bu-1J-cQk" secondAttribute="height" multiplier="125:72" id="fjR-rb-fHb"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="580254518.168419">
+                                    <!--2019-05-22 21:48:38 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzB-Vx-sgE">
+                                <rect key="frame" x="119.5" y="548" width="136" height="30"/>
+                                <color key="backgroundColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jzB-Vx-sgE" secondAttribute="height" multiplier="68:15" id="wu4-au-11Q"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Iniciar"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data do perfil a ser traçado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="IPH-kx-049">
+                                <rect key="frame" x="16" y="147" width="185" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IPH-kx-049" firstAttribute="top" secondItem="Jxi-hz-K52" secondAttribute="bottom" constant="64" id="4cF-U5-4vW"/>
+                            <constraint firstItem="Oiy-0T-eLa" firstAttribute="trailing" secondItem="Jxi-hz-K52" secondAttribute="trailing" constant="16" id="7Ee-4H-cXR"/>
+                            <constraint firstItem="0Bu-1J-cQk" firstAttribute="centerY" secondItem="Oiy-0T-eLa" secondAttribute="centerY" id="9OG-g2-URp"/>
+                            <constraint firstItem="jzB-Vx-sgE" firstAttribute="centerX" secondItem="Oiy-0T-eLa" secondAttribute="centerX" id="CFr-e2-7fW"/>
+                            <constraint firstItem="IPH-kx-049" firstAttribute="leading" secondItem="Oiy-0T-eLa" secondAttribute="leading" constant="16" id="KNx-tr-T9x"/>
+                            <constraint firstItem="Jxi-hz-K52" firstAttribute="top" secondItem="Oiy-0T-eLa" secondAttribute="top" constant="33" id="Kon-4R-VAv"/>
+                            <constraint firstItem="Jxi-hz-K52" firstAttribute="leading" secondItem="Oiy-0T-eLa" secondAttribute="leading" constant="16" id="kGE-86-jEb"/>
+                            <constraint firstItem="0Bu-1J-cQk" firstAttribute="centerX" secondItem="Oiy-0T-eLa" secondAttribute="centerX" id="oPF-fw-Bg0"/>
+                            <constraint firstItem="Oiy-0T-eLa" firstAttribute="bottom" secondItem="jzB-Vx-sgE" secondAttribute="bottom" constant="40" id="rK9-o1-JkE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Oiy-0T-eLa"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="MQv-02-xHE"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zXW-kC-IyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

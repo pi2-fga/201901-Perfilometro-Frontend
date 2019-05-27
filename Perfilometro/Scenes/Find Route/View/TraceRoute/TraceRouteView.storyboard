@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w1U-cB-qa3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2hp-Z3-aLs">
+            <objects>
+                <viewController storyboardIdentifier="TraceRouteView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IT7-mT-X3t" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VC7-l6-Psr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yn3-wm-Uy5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMC-LR-le6">
+                                <rect key="frame" x="85" y="571" width="205" height="34"/>
+                                <color key="backgroundColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dMC-LR-le6" secondAttribute="height" multiplier="205:34" id="lV3-9J-ILq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Traçar Rota">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rha-ze-LiV" kind="show" id="jQ8-Ry-Mcp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yn3-wm-Uy5" firstAttribute="leading" secondItem="8wK-9m-WeL" secondAttribute="leading" id="3Fy-u6-He0"/>
+                            <constraint firstItem="yn3-wm-Uy5" firstAttribute="top" secondItem="8wK-9m-WeL" secondAttribute="top" id="7np-Gu-4pL"/>
+                            <constraint firstItem="dMC-LR-le6" firstAttribute="leading" secondItem="8wK-9m-WeL" secondAttribute="leading" constant="85" id="92R-O6-stD"/>
+                            <constraint firstItem="8wK-9m-WeL" firstAttribute="bottom" secondItem="dMC-LR-le6" secondAttribute="bottom" constant="13" id="GYT-0f-YfL"/>
+                            <constraint firstItem="8wK-9m-WeL" firstAttribute="bottom" secondItem="yn3-wm-Uy5" secondAttribute="bottom" id="Iu8-fR-TXW"/>
+                            <constraint firstItem="8wK-9m-WeL" firstAttribute="trailing" secondItem="dMC-LR-le6" secondAttribute="trailing" constant="85" id="T36-j5-PtE"/>
+                            <constraint firstItem="8wK-9m-WeL" firstAttribute="trailing" secondItem="yn3-wm-Uy5" secondAttribute="trailing" id="p0l-pO-W5r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8wK-9m-WeL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NlH-gV-ZBb"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GyT-Uz-nyz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="203.74812593703149"/>
+        </scene>
+        <!--RegisterRoute-->
+        <scene sceneID="0hi-tQ-yzf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RegisterRoute" id="rha-ze-LiV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fic-8h-JMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900.8" y="202.39880059970017"/>
+        </scene>
+        <!--Traçar Rota-->
+        <scene sceneID="k9O-4s-vt2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w1U-cB-qa3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Traçar Rota" id="vvW-Li-o2Z"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="URu-Vr-ByS">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IT7-mT-X3t" kind="relationship" relationship="rootViewController" id="vRY-eL-qAa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jot-q4-9Pi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="176.80000000000001" y="203.74812593703149"/>
+        </scene>
+    </scenes>
+</document>
