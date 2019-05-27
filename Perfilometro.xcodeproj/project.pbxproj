@@ -13,14 +13,13 @@
 		AD750BB3226FEF8200140400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD750BB1226FEF8200140400 /* LaunchScreen.storyboard */; };
 		AD750BBE226FEF8200140400 /* PerfilometroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BBD226FEF8200140400 /* PerfilometroTests.swift */; };
 		AD750BC9226FEF8200140400 /* PerfilometroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BC8226FEF8200140400 /* PerfilometroUITests.swift */; };
-		AD9023182292403700AE7D78 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9023172292403700AE7D78 /* TabBarViewController.storyboard */; };
+		AD9023182292403700AE7D78 /* TabBarViewController2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9023172292403700AE7D78 /* TabBarViewController2.storyboard */; };
 		AD90236222924C0000AE7D78 /* FindRoutePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90235C22924C0000AE7D78 /* FindRoutePresenter.swift */; };
 		AD90236322924C0000AE7D78 /* FindRouteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90235D22924C0000AE7D78 /* FindRouteWorker.swift */; };
 		AD90236422924C0000AE7D78 /* FindRouteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90235E22924C0000AE7D78 /* FindRouteRouter.swift */; };
 		AD90236522924C0000AE7D78 /* FindRouteModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90235F22924C0000AE7D78 /* FindRouteModels.swift */; };
 		AD90236622924C0000AE7D78 /* FindRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90236022924C0000AE7D78 /* FindRouteViewController.swift */; };
 		AD90236722924C0000AE7D78 /* FindRouteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90236122924C0000AE7D78 /* FindRouteInteractor.swift */; };
-		ADE3F7B4228515EF0094A699 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */; };
 		ADE7BDBF2296DDCA003784EC /* mapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = ADE7BDBE2296DDCA003784EC /* mapStyle.json */; };
 		B45F47A0CCEBD7636AEED256 /* Pods_PerfilometroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2F2D34545E78830FDEEFDE /* Pods_PerfilometroUITests.framework */; };
 		BC47AEA0E4E973051BE73DF7 /* Pods_PerfilometroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221B224A1745F79087B26B9B /* Pods_PerfilometroTests.framework */; };
@@ -73,7 +72,7 @@
 		AD750BC4226FEF8200140400 /* PerfilometroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfilometroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD750BC8226FEF8200140400 /* PerfilometroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilometroUITests.swift; sourceTree = "<group>"; };
 		AD750BCA226FEF8200140400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD9023172292403700AE7D78 /* TabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
+		AD9023172292403700AE7D78 /* TabBarViewController2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController2.storyboard; sourceTree = "<group>"; };
 		AD90235C22924C0000AE7D78 /* FindRoutePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRoutePresenter.swift; sourceTree = "<group>"; };
 		AD90235D22924C0000AE7D78 /* FindRouteWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRouteWorker.swift; sourceTree = "<group>"; };
 		AD90235E22924C0000AE7D78 /* FindRouteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRouteRouter.swift; sourceTree = "<group>"; };
@@ -197,7 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				D4DC653622987ACC00A74C2D /* TabBarController */,
-				AD9023172292403700AE7D78 /* TabBarViewController.storyboard */,
+				AD9023172292403700AE7D78 /* TabBarViewController2.storyboard */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -461,7 +460,7 @@
 				D4DC653922987ACC00A74C2D /* ResultsView.storyboard in Resources */,
 				D4DC653F22987ACC00A74C2D /* TabBarViewController.storyboard in Resources */,
 				D4DC654222987B0100A74C2D /* FindRouteView.storyboard in Resources */,
-				AD9023182292403700AE7D78 /* TabBarViewController.storyboard in Resources */,
+				AD9023182292403700AE7D78 /* TabBarViewController2.storyboard in Resources */,
 				D4DC653D22987ACC00A74C2D /* RegisterRoute.storyboard in Resources */,
 				ADE7BDBF2296DDCA003784EC /* mapStyle.json in Resources */,
 				D4DC653A22987ACC00A74C2D /* RouteProfile.storyboard in Resources */,
@@ -612,12 +611,11 @@
 				AD90236622924C0000AE7D78 /* FindRouteViewController.swift in Sources */,
 				D4DC653E22987ACC00A74C2D /* TabBarViewController.swift in Sources */,
 				D4DC652B22987AB400A74C2D /* Endpoint.swift in Sources */,
-				ADE3F7B4228515EF0094A699 /* BluetoothManager.swift in Sources */,
 				AD750BA9226FEF8000140400 /* AppDelegate.swift in Sources */,
-				D4DC652C22987AB400A74C2D /* BluetoothManager.swift in Sources */,
 				AD90236322924C0000AE7D78 /* FindRouteWorker.swift in Sources */,
 				AD90236222924C0000AE7D78 /* FindRoutePresenter.swift in Sources */,
 				AD90236722924C0000AE7D78 /* FindRouteInteractor.swift in Sources */,
+				D4DC652C22987AB400A74C2D /* BluetoothManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -722,7 +720,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -777,7 +775,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -797,7 +795,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peperro.Perfilometro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -817,7 +815,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peperro.Perfilometro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -839,7 +837,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peperro.PerfilometroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Perfilometro.app/Perfilometro";
 			};
@@ -862,7 +860,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peperro.PerfilometroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Perfilometro.app/Perfilometro";
 			};
@@ -884,7 +882,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peperro.PerfilometroUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Perfilometro;
 			};
@@ -906,7 +904,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peperro.PerfilometroUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Perfilometro;
 			};

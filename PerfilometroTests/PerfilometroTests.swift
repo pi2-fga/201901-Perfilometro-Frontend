@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Perfilometro
+//@testable import Perfilometro
 
 class PerfilometroTests: XCTestCase {
 
