@@ -23,6 +23,12 @@
 		ADE7BDBF2296DDCA003784EC /* mapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = ADE7BDBE2296DDCA003784EC /* mapStyle.json */; };
 		B45F47A0CCEBD7636AEED256 /* Pods_PerfilometroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D2F2D34545E78830FDEEFDE /* Pods_PerfilometroUITests.framework */; };
 		BC47AEA0E4E973051BE73DF7 /* Pods_PerfilometroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221B224A1745F79087B26B9B /* Pods_PerfilometroTests.framework */; };
+		D4AA714E22B3CAE30095B252 /* CalibratePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA714D22B3CAE30095B252 /* CalibratePresenter.swift */; };
+		D4AA715022B3CAEC0095B252 /* CalibrateWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA714F22B3CAEC0095B252 /* CalibrateWorker.swift */; };
+		D4AA715222B3CAF40095B252 /* CalibrateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA715122B3CAF40095B252 /* CalibrateRouter.swift */; };
+		D4AA715422B3CB050095B252 /* CalibrateModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA715322B3CB050095B252 /* CalibrateModels.swift */; };
+		D4AA715622B3CB140095B252 /* CalibrateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA715522B3CB140095B252 /* CalibrateViewController.swift */; };
+		D4AA715822B3CB1E0095B252 /* CalibrateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA715722B3CB1E0095B252 /* CalibrateInteractor.swift */; };
 		D4DC652A22987AB400A74C2D /* HTTPNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652622987AB400A74C2D /* HTTPNetworkManager.swift */; };
 		D4DC652B22987AB400A74C2D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652722987AB400A74C2D /* Endpoint.swift */; };
 		D4DC652C22987AB400A74C2D /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652922987AB400A74C2D /* BluetoothManager.swift */; };
@@ -83,6 +89,12 @@
 		ADE7BDBE2296DDCA003784EC /* mapStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapStyle.json; sourceTree = "<group>"; };
 		C0F666EDA2184A060E609518 /* Pods-PerfilometroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroUITests.debug.xcconfig"; path = "Target Support Files/Pods-PerfilometroUITests/Pods-PerfilometroUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D445D0612295DE33007960E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4AA714D22B3CAE30095B252 /* CalibratePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibratePresenter.swift; sourceTree = "<group>"; };
+		D4AA714F22B3CAEC0095B252 /* CalibrateWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateWorker.swift; sourceTree = "<group>"; };
+		D4AA715122B3CAF40095B252 /* CalibrateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateRouter.swift; sourceTree = "<group>"; };
+		D4AA715322B3CB050095B252 /* CalibrateModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateModels.swift; sourceTree = "<group>"; };
+		D4AA715522B3CB140095B252 /* CalibrateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateViewController.swift; sourceTree = "<group>"; };
+		D4AA715722B3CB1E0095B252 /* CalibrateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateInteractor.swift; sourceTree = "<group>"; };
 		D4DC652622987AB400A74C2D /* HTTPNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPNetworkManager.swift; sourceTree = "<group>"; };
 		D4DC652722987AB400A74C2D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		D4DC652922987AB400A74C2D /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
@@ -204,6 +216,7 @@
 		AD90231A229240DD00AE7D78 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D4AA714B22B3CAAE0095B252 /* Calibrate */,
 				AD90236822924C0D00AE7D78 /* Find Route */,
 			);
 			path = Scenes;
@@ -257,6 +270,27 @@
 				5D2F2D34545E78830FDEEFDE /* Pods_PerfilometroUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4AA714B22B3CAAE0095B252 /* Calibrate */ = {
+			isa = PBXGroup;
+			children = (
+				D4AA714C22B3CAC70095B252 /* View */,
+				D4AA714D22B3CAE30095B252 /* CalibratePresenter.swift */,
+				D4AA714F22B3CAEC0095B252 /* CalibrateWorker.swift */,
+				D4AA715122B3CAF40095B252 /* CalibrateRouter.swift */,
+				D4AA715322B3CB050095B252 /* CalibrateModels.swift */,
+				D4AA715522B3CB140095B252 /* CalibrateViewController.swift */,
+				D4AA715722B3CB1E0095B252 /* CalibrateInteractor.swift */,
+			);
+			path = Calibrate;
+			sourceTree = "<group>";
+		};
+		D4AA714C22B3CAC70095B252 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D4DC65232298791C00A74C2D /* Recovered References */ = {
@@ -607,14 +641,20 @@
 			files = (
 				AD90236422924C0000AE7D78 /* FindRouteRouter.swift in Sources */,
 				D4DC652A22987AB400A74C2D /* HTTPNetworkManager.swift in Sources */,
+				D4AA714E22B3CAE30095B252 /* CalibratePresenter.swift in Sources */,
 				AD90236522924C0000AE7D78 /* FindRouteModels.swift in Sources */,
 				AD90236622924C0000AE7D78 /* FindRouteViewController.swift in Sources */,
 				D4DC653E22987ACC00A74C2D /* TabBarViewController.swift in Sources */,
 				D4DC652B22987AB400A74C2D /* Endpoint.swift in Sources */,
 				AD750BA9226FEF8000140400 /* AppDelegate.swift in Sources */,
+				D4AA715222B3CAF40095B252 /* CalibrateRouter.swift in Sources */,
+				D4AA715422B3CB050095B252 /* CalibrateModels.swift in Sources */,
 				AD90236322924C0000AE7D78 /* FindRouteWorker.swift in Sources */,
 				AD90236222924C0000AE7D78 /* FindRoutePresenter.swift in Sources */,
 				AD90236722924C0000AE7D78 /* FindRouteInteractor.swift in Sources */,
+				D4AA715022B3CAEC0095B252 /* CalibrateWorker.swift in Sources */,
+				D4AA715622B3CB140095B252 /* CalibrateViewController.swift in Sources */,
+				D4AA715822B3CB1E0095B252 /* CalibrateInteractor.swift in Sources */,
 				D4DC652C22987AB400A74C2D /* BluetoothManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
