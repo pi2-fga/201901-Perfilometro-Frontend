@@ -73,7 +73,7 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSomething()
+//        doSomething()
         
         setupLocationManager()
         setupMapView()
