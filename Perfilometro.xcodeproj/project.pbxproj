@@ -34,6 +34,7 @@
 		D4AA716222B3DFD60095B252 /* road.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA716122B3DFD60095B252 /* road.swift */; };
 		D4AA716422B3F44C0095B252 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA716322B3F44C0095B252 /* ResultsTableViewCell.swift */; };
 		D4AA716822B3F7380095B252 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4AA716722B3F7380095B252 /* ResultTableViewCell.xib */; };
+		D4AA718A22B6B5570095B252 /* ExempleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA718922B6B5570095B252 /* ExempleData.swift */; };
 		D4DC652A22987AB400A74C2D /* HTTPNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652622987AB400A74C2D /* HTTPNetworkManager.swift */; };
 		D4DC652B22987AB400A74C2D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652722987AB400A74C2D /* Endpoint.swift */; };
 		D4DC652C22987AB400A74C2D /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652922987AB400A74C2D /* BluetoothManager.swift */; };
@@ -105,6 +106,7 @@
 		D4AA716122B3DFD60095B252 /* road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = road.swift; sourceTree = "<group>"; };
 		D4AA716322B3F44C0095B252 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
 		D4AA716722B3F7380095B252 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
+		D4AA718922B6B5570095B252 /* ExempleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExempleData.swift; sourceTree = "<group>"; };
 		D4DC652622987AB400A74C2D /* HTTPNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPNetworkManager.swift; sourceTree = "<group>"; };
 		D4DC652722987AB400A74C2D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		D4DC652922987AB400A74C2D /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 		D4AA715A22B3D9420095B252 /* SingleResult */ = {
 			isa = PBXGroup;
 			children = (
+				D4AA718922B6B5570095B252 /* ExempleData.swift */,
 				D4AA715E22B3DA440095B252 /* SingleResultViewController.swift */,
 				D4AA715D22B3DA1E0095B252 /* SingleResultView */,
 			);
@@ -691,6 +694,7 @@
 				D4AA715022B3CAEC0095B252 /* CalibrateWorker.swift in Sources */,
 				D4AA715622B3CB140095B252 /* CalibrateViewController.swift in Sources */,
 				D4AA715822B3CB1E0095B252 /* CalibrateInteractor.swift in Sources */,
+				D4AA718A22B6B5570095B252 /* ExempleData.swift in Sources */,
 				D4DC652C22987AB400A74C2D /* BluetoothManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
