@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ResultsTableViewCell" customModule="Perfilometro" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGo-FG-hcs">
+                    <rect key="frame" x="146.5" y="30" width="42" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="GcK-0f-Clq">
+                    <rect key="frame" x="10" y="4" width="104.5" height="93"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="104.5" id="IMu-tm-tLn"/>
+                        <constraint firstAttribute="height" constant="93" id="PQo-s4-pa9"/>
+                    </constraints>
+                </mapView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="fGo-FG-hcs" secondAttribute="top" constant="14" id="0Hh-rL-SZQ"/>
+                <constraint firstItem="fGo-FG-hcs" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="5" id="7Ih-Ga-jjo"/>
+                <constraint firstItem="fGo-FG-hcs" firstAttribute="leading" secondItem="GcK-0f-Clq" secondAttribute="trailing" constant="32" id="LOT-pd-ZlP"/>
+                <constraint firstItem="GcK-0f-Clq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="js8-Ar-FLC"/>
+                <constraint firstItem="GcK-0f-Clq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="r52-AM-mwl"/>
+                <constraint firstAttribute="bottom" secondItem="GcK-0f-Clq" secondAttribute="bottom" constant="3" id="vcc-wu-gnk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="roadName" destination="fGo-FG-hcs" id="PHg-DU-a6p"/>
+                <outlet property="tracedRoute" destination="GcK-0f-Clq" id="la4-iZ-ZUU"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="117.85714285714285"/>
+        </view>
+    </objects>
+</document>

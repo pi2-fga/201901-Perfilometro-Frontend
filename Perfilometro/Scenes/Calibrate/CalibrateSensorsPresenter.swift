@@ -13,7 +13,7 @@ protocol CalibrateSensorsPresentationLogic {
 }
 
 class CalibrateSensorsPresenter: CalibrateSensorsPresentationLogic {
-//    weak var viewController: CalibrateSensorsD?
+    weak var viewController: CalibrateSensorsViewController?
 
     // MARK: Do something
 
