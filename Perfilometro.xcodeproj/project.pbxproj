@@ -43,6 +43,8 @@
 		D4AA71B822B745210095B252 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71AD22B745210095B252 /* ResultsTableViewController.swift */; };
 		D4AA71B922B745210095B252 /* ResultsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AA71AF22B745210095B252 /* ResultsView.storyboard */; };
 		D4AA71BA22B745210095B252 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4AA71B022B745210095B252 /* ResultTableViewCell.xib */; };
+		D4AA71C022B75D7C0095B252 /* CameraControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71BF22B75D7C0095B252 /* CameraControll.swift */; };
+		D4AA71C222B75D940095B252 /* MoveCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71C122B75D940095B252 /* MoveCameraDelegate.swift */; };
 		D4DC652A22987AB400A74C2D /* HTTPNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652622987AB400A74C2D /* HTTPNetworkManager.swift */; };
 		D4DC652B22987AB400A74C2D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652722987AB400A74C2D /* Endpoint.swift */; };
 		D4DC652C22987AB400A74C2D /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652922987AB400A74C2D /* BluetoothManager.swift */; };
@@ -122,6 +124,8 @@
 		D4AA71AD22B745210095B252 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
 		D4AA71AF22B745210095B252 /* ResultsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultsView.storyboard; sourceTree = "<group>"; };
 		D4AA71B022B745210095B252 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
+		D4AA71BF22B75D7C0095B252 /* CameraControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControll.swift; sourceTree = "<group>"; };
+		D4AA71C122B75D940095B252 /* MoveCameraDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCameraDelegate.swift; sourceTree = "<group>"; };
 		D4DC652622987AB400A74C2D /* HTTPNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPNetworkManager.swift; sourceTree = "<group>"; };
 		D4DC652722987AB400A74C2D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		D4DC652922987AB400A74C2D /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
@@ -328,6 +332,8 @@
 			children = (
 				D4AA718922B6B5570095B252 /* ExempleData.swift */,
 				D4AA715E22B3DA440095B252 /* SingleResultViewController.swift */,
+				D4AA71BF22B75D7C0095B252 /* CameraControll.swift */,
+				D4AA71C122B75D940095B252 /* MoveCameraDelegate.swift */,
 				D4AA715D22B3DA1E0095B252 /* SingleResultView */,
 			);
 			path = SingleResult;
@@ -720,9 +726,11 @@
 				D4DC653E22987ACC00A74C2D /* TabBarViewController.swift in Sources */,
 				D4AA715F22B3DA440095B252 /* SingleResultViewController.swift in Sources */,
 				D4DC652B22987AB400A74C2D /* Endpoint.swift in Sources */,
+				D4AA71C222B75D940095B252 /* MoveCameraDelegate.swift in Sources */,
 				AD750BA9226FEF8000140400 /* AppDelegate.swift in Sources */,
 				D4AA716222B3DFD60095B252 /* road.swift in Sources */,
 				AD90236322924C0000AE7D78 /* FindRouteWorker.swift in Sources */,
+				D4AA71C022B75D7C0095B252 /* CameraControll.swift in Sources */,
 				AD90236222924C0000AE7D78 /* FindRoutePresenter.swift in Sources */,
 				D4AA71B722B745210095B252 /* RouteResultsViewController.swift in Sources */,
 				AD90236722924C0000AE7D78 /* FindRouteInteractor.swift in Sources */,
