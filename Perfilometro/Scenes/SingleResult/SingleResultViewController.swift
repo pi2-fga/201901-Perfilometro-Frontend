@@ -23,6 +23,7 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
     //properties
     private var objectScene: SCNScene?
     private var cameraNode: SCNNode?
+    private var overlay: CameraControll?
 //    private var scnView: SCNView?
     private var object3D: SCNNode?
     private var chartNode:SCNNode!
@@ -42,6 +43,7 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
         setUpOmniLight()
         setupAmbientLight()
         addCamera(scene: self.objectScene!)
+        setupOverlay()
         showData()
         
     }
@@ -61,13 +63,6 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
     }
 
     fileprivate func setupView() {
-//        self.scnView = SCNView(frame: self.view.frame)
-//        self.view.addSubview(scnView!)
-//        self.scnView?.delegate = self as! SCNSceneRendererDelegate
-//        scnView?.backgroundColor = UIColor.black
-//        scnView?.allowsCameraControl = true
-//        self.graph = SCNView(frame: self.view.frame)
-//        self.view.addSubview(graph!)
         self.graph?.delegate = self
         graph?.backgroundColor = UIColor.black
         graph?.allowsCameraControl = true
@@ -78,6 +73,11 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
         self.graph?.scene = self.objectScene
     }
 
+    fileprivate func setupOverlay() {
+        self.overlay = CameraControll(size: (self.graph?.bounds.size)!)
+        self.overlay?.moveDelegate = self
+        self.graph?.overlaySKScene = self.overlay
+    }
     fileprivate func setupAmbientLight() {
         let lightNode = SCNNode()
         lightNode.light = SCNLight()
@@ -178,4 +178,16 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
     }
 }
 
-
+extension SingleResultViewController: MoveCameraDelegate {
+    
+    func moveCameraForward() {
+        let mvAction = SCNAction.move(by: SCNVector3(x: -10.0, y: 0, z: 0), duration: 0.5)
+        self.chartNode.runAction(mvAction)
+        
+    }
+    
+    func moveCameraBackward() {
+        let mvAction = SCNAction.move(by: SCNVector3(x: 10.0, y: 0, z: 0), duration: 0.5)
+        self.chartNode.runAction(mvAction)
+    }
+}
