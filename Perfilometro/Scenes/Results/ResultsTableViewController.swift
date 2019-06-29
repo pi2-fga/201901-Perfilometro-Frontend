@@ -22,15 +22,11 @@ class ResultsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
+    
+    
+    override func numberOfSections(in tableView: UITableView) -> Int { return 1 }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return roads.count
-    }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return roads.count }
 
     private func setNibUp() {
         let agencyNib = UINib.init(nibName: "ResultTableViewCell", bundle: nil)
@@ -50,10 +46,14 @@ class ResultsTableViewController: UITableViewController {
             singleResultView.roadname = self.road
         }
     }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         self.road = self.roads[indexPath.row]
         performSegue(withIdentifier: segueId, sender: nil)
         
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { return 185 }
+    
 }
