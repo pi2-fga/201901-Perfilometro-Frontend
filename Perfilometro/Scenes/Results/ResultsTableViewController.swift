@@ -10,7 +10,7 @@ import UIKit
 
 class ResultsTableViewController: UITableViewController {
 
-    let roads: [String] = ["EPIA", "EPGU"]
+    let roads: [String] = ["EPIA", "EPGU" , "Eixão Norte", "EPP", "EPTG", "Eixo W"]
     
     var road: String?
     let segueId = "result"
@@ -22,8 +22,6 @@ class ResultsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    
-    
     override func numberOfSections(in tableView: UITableView) -> Int { return 1 }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return roads.count }
@@ -53,7 +51,5 @@ class ResultsTableViewController: UITableViewController {
         performSegue(withIdentifier: segueId, sender: nil)
         
     }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { return 185 }
-    
+
 }

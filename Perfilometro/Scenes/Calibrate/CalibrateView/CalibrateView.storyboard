@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Calibrar-->
+        <!--Calibrate Sensors View Controller-->
         <scene sceneID="8Jl-7u-gdg">
             <objects>
                 <viewController storyboardIdentifier="CalibrateView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QYY-DH-7c0" customClass="CalibrateSensorsViewController" customModule="Perfilometro" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,7 +57,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r0O-Tq-32f"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calibrar" id="PfP-it-y6a"/>
+                    <tabBarItem key="tabBarItem" title="" image="settings" id="PfP-it-y6a">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64w-Gy-O07" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -65,4 +67,7 @@
             <point key="canvasLocation" x="253.59999999999999" y="71.514242878560722"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settings" width="29" height="29"/>
+    </resources>
 </document>

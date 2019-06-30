@@ -33,6 +33,9 @@
                             <outlet property="delegate" destination="7ue-dG-t8g" id="3HL-8m-aEQ"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="results" id="YoZ-uO-KSD">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Resultados" id="rWV-yM-lwr"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
@@ -55,12 +58,11 @@
         <!--Navigation Controller-->
         <scene sceneID="Ma5-0b-6sg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qa3-Zd-Z60" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6gf-1C-fWT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="X6r-tw-rcZ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XYk-34-GwN">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="XYk-34-GwN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -68,8 +70,12 @@
                         <segue destination="7ue-dG-t8g" kind="relationship" relationship="rootViewController" id="5DA-nJ-d5j"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qa3-Zd-Z60" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1372" y="143.47826086956522"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="results" width="29" height="29"/>
+    </resources>
 </document>
