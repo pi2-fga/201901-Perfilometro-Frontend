@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNU-QQ-yfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-382" y="161"/>
+            <point key="canvasLocation" x="-510" y="8"/>
         </scene>
         <!--Single Results Table View Controller-->
         <scene sceneID="XvK-Ax-7ly">
@@ -99,7 +99,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRAJETO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBC-5d-eX5">
                                                     <rect key="frame" x="10" y="10" width="255" height="15"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                     <color key="textColor" name="mediumGray"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -141,7 +141,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRÁFICO 3D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1W-Q2-1Jc">
                                                     <rect key="frame" x="10" y="10" width="255" height="15"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                     <color key="textColor" name="mediumGray"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -183,7 +183,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRÁFICOS 2D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLQ-C1-Pdj">
                                                     <rect key="frame" x="10" y="10" width="255" height="15"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                     <color key="textColor" name="mediumGray"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -213,6 +213,10 @@
                             <outlet property="delegate" destination="ApU-jU-Iev" id="ztS-d0-06N"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="" image="results" id="Nte-II-6s8">
+                        <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-10"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="nnw-jH-L06"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -222,10 +226,11 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49c-Pj-9Sp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752.79999999999995" y="160.56971514242881"/>
+            <point key="canvasLocation" x="1692" y="160.56971514242881"/>
         </scene>
     </scenes>
     <resources>
+        <image name="results" width="29" height="29"/>
         <namedColor name="mediumGray">
             <color red="0.32156862745098042" green="0.32156862745098042" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

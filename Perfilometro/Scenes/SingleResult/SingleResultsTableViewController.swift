@@ -40,6 +40,8 @@ class SingleResultsTableViewController: UITableViewController, SCNSceneRendererD
         addCamera(scene: self.objectScene!)
         setupOverlay()
         showData()
+        
+        setupLayout()
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -50,9 +52,7 @@ class SingleResultsTableViewController: UITableViewController, SCNSceneRendererD
         super.init(coder: aDecoder)
     }
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
-    }
+    init() { super.init(nibName: nil, bundle: nil) }
     
     fileprivate func setupView() {
         self.graph?.delegate = self
@@ -151,6 +151,11 @@ class SingleResultsTableViewController: UITableViewController, SCNSceneRendererD
         }
         
         return node
+    }
+    
+    private func setupLayout() {
+        self.routeInMap.layer.cornerRadius = 10
+        self.graph.layer.cornerRadius = 10
     }
 
 }

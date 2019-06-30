@@ -18,7 +18,7 @@ class CalibrateSensorsPresenter: CalibrateSensorsPresentationLogic {
     // MARK: Do something
 
     func presentSomething(response: CalibrateSensors.Something.Response) {
-        let viewModel = CalibrateSensors.Something.ViewModel()
+//        let viewModel = CalibrateSensors.Something.ViewModel()
 //        viewController?.displaySomething(viewModel: viewModel)
     }
 }
