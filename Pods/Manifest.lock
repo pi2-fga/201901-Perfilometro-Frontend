@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (5.0.0-beta.6)
+  - CocoaAsyncSocket (7.6.3)
+  - CocoaMQTT (1.2.1):
+    - CocoaAsyncSocket (~> 7.6.3)
   - GoogleMaps (3.1.0):
     - GoogleMaps/Maps (= 3.1.0)
   - GoogleMaps/Base (3.1.0)
@@ -10,20 +13,25 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-beta.5)
+  - CocoaMQTT
   - GoogleMaps
   - GooglePlaces
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - CocoaAsyncSocket
+    - CocoaMQTT
     - GoogleMaps
     - GooglePlaces
 
 SPEC CHECKSUMS:
   Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  CocoaMQTT: 0170e4b857e1db364813f0923c3b96496b78448c
   GoogleMaps: 5c13302e6fe6bb6e686b267196586b91cd594225
   GooglePlaces: e874db179f2675c4f3eeda0b686b540273a578b0
 
-PODFILE CHECKSUM: 7d750a352b9db51e0f20d707cfbcb8aa3d15798a
+PODFILE CHECKSUM: 868251daf12202fe9542d8c3c49cb33497a07ac1
 
 COCOAPODS: 1.6.1

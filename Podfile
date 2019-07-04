@@ -10,6 +10,7 @@ target 'Perfilometro' do
   pod 'Alamofire', '~> 5.0.0-beta.5'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'CocoaMQTT'
 
   target 'PerfilometroTests' do
     inherit! :search_paths
