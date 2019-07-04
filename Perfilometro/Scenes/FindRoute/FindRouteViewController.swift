@@ -100,10 +100,11 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
         do {
             if let styleURL = Bundle.main.url(forResource: "mapStyle", withExtension: "json") {
                 mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+                self.mapView.addSubview(mapView)
             } else { NSLog("Unable to find style.json") }
         } catch { NSLog("One or more of the map styles failed to load. \(error)") }
         
-        self.mapView.addSubview(mapView)
+//        self.mapView.addSubview(mapView)
     }
     
     private func setupLocationManager() {

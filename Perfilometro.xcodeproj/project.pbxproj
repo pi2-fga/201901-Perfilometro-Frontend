@@ -15,7 +15,6 @@
 		AD750BB3226FEF8200140400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD750BB1226FEF8200140400 /* LaunchScreen.storyboard */; };
 		AD750BBE226FEF8200140400 /* PerfilometroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BBD226FEF8200140400 /* PerfilometroTests.swift */; };
 		AD750BC9226FEF8200140400 /* PerfilometroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BC8226FEF8200140400 /* PerfilometroUITests.swift */; };
-		AD9023182292403700AE7D78 /* TabBarViewController2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9023172292403700AE7D78 /* TabBarViewController2.storyboard */; };
 		AD90236222924C0000AE7D78 /* FindRoutePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90235C22924C0000AE7D78 /* FindRoutePresenter.swift */; };
 		AD90236322924C0000AE7D78 /* FindRouteWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90235D22924C0000AE7D78 /* FindRouteWorker.swift */; };
 		AD90236422924C0000AE7D78 /* FindRouteRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90235E22924C0000AE7D78 /* FindRouteRouter.swift */; };
@@ -98,7 +97,6 @@
 		AD750BC4226FEF8200140400 /* PerfilometroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfilometroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD750BC8226FEF8200140400 /* PerfilometroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilometroUITests.swift; sourceTree = "<group>"; };
 		AD750BCA226FEF8200140400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD9023172292403700AE7D78 /* TabBarViewController2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarViewController2.storyboard; sourceTree = "<group>"; };
 		AD90235C22924C0000AE7D78 /* FindRoutePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRoutePresenter.swift; sourceTree = "<group>"; };
 		AD90235D22924C0000AE7D78 /* FindRouteWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRouteWorker.swift; sourceTree = "<group>"; };
 		AD90235E22924C0000AE7D78 /* FindRouteRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRouteRouter.swift; sourceTree = "<group>"; };
@@ -258,7 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				D4DC653622987ACC00A74C2D /* TabBarController */,
-				AD9023172292403700AE7D78 /* TabBarViewController2.storyboard */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -582,7 +579,6 @@
 				D4DC653F22987ACC00A74C2D /* TabBarViewController.storyboard in Resources */,
 				ADFDD0A422C7CF0C0033BB91 /* Assets.xcassets in Resources */,
 				D4DC654222987B0100A74C2D /* FindRouteView.storyboard in Resources */,
-				AD9023182292403700AE7D78 /* TabBarViewController2.storyboard in Resources */,
 				D4DC653D22987ACC00A74C2D /* RegisterRoute.storyboard in Resources */,
 				ADE7BDBF2296DDCA003784EC /* mapStyle.json in Resources */,
 				D4DC653A22987ACC00A74C2D /* RouteProfile.storyboard in Resources */,
