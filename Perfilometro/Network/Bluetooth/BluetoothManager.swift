@@ -53,18 +53,18 @@ extension BluetoothManager: CBCentralManagerDelegate {
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         print("Connected")
         self.raspPeripherical.discoverServices(nil)
-        
     }
+    
 }
 
 extension BluetoothManager: CBPeripheralDelegate {
+    
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         guard let services = peripheral.services else {return}
         for service in services {
             print(service)
             peripheral.discoverCharacteristics(nil, for: service)
         }
-        
     }
     
     func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
@@ -89,5 +89,6 @@ extension BluetoothManager: CBPeripheralDelegate {
         //      <#code#>
         //    }
     }
+    
 }
 

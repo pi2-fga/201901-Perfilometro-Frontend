@@ -107,8 +107,8 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueId {
-            let singleResultView: SingleResultViewController = segue.destination as! SingleResultViewController
-            singleResultView.roadname = self.road
+//            let singleResultView: SingleResultsTableViewController = segue.destination as! SingleResultsTableViewController
+//            singleResultView.roadname = self.road
         }
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

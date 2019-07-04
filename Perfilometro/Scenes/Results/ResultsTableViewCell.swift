@@ -9,14 +9,23 @@
 import UIKit
 import MapKit
 class ResultsTableViewCell: UITableViewCell {
-
-
-    @IBOutlet weak var roadName: UILabel!
     
+    // MARK :- Outlet
+    
+    @IBOutlet weak var roadName: UILabel!
     @IBOutlet weak var tracedRoute: MKMapView!
+    
+    var mapDeparture: String = "" {
+        didSet {
+             self.roadName.text = mapDeparture
+        }
+    }
+
+
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setupLayout()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -27,6 +36,10 @@ class ResultsTableViewCell: UITableViewCell {
     
     func setRoadName(name: String) {
         self.roadName.text = name
+    }
+    
+    private func setupLayout() {
+        self.tracedRoute.layer.cornerRadius = 10
     }
 
 }
