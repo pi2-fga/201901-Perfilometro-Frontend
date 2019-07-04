@@ -10,33 +10,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Calibrar Sensores-->
+        <!--Calibrar-->
         <scene sceneID="8Jl-7u-gdg">
             <objects>
-                <viewController storyboardIdentifier="CalibrateView" title="Calibrar Sensores" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QYY-DH-7c0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalibrateView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QYY-DH-7c0" customClass="CalibrateSensorsViewController" customModule="Perfilometro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IW6-TF-hsA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total de sensores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYa-be-1AR">
-                                <rect key="frame" x="16" y="20" width="135" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calibrar sensores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeQ-0B-Nbf">
+                                <rect key="frame" x="120.5" y="20" width="134" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj3-V3-rqP" customClass="UIButtonDesignable" customModule="Perfilometro" customModuleProvider="target">
-                                <rect key="frame" x="65" y="495" width="245" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total de sensores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYa-be-1AR">
+                                <rect key="frame" x="16" y="84" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj3-V3-rqP">
+                                <rect key="frame" x="65" y="559" width="245" height="30"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Calibrar"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="lFk-o7-6My">
-                                <rect key="frame" x="116.5" y="205" width="142" height="144"/>
+                                <rect key="frame" x="116.5" y="247" width="142" height="144"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="120"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -48,14 +49,15 @@
                             <constraint firstItem="r0O-Tq-32f" firstAttribute="trailing" secondItem="Lj3-V3-rqP" secondAttribute="trailing" constant="65" id="2KH-gl-kxi"/>
                             <constraint firstItem="r0O-Tq-32f" firstAttribute="bottom" secondItem="Lj3-V3-rqP" secondAttribute="bottom" constant="29" id="7vt-yy-qBf"/>
                             <constraint firstItem="lFk-o7-6My" firstAttribute="centerX" secondItem="r0O-Tq-32f" secondAttribute="centerX" id="Dt6-dl-KDq"/>
+                            <constraint firstItem="KeQ-0B-Nbf" firstAttribute="top" secondItem="r0O-Tq-32f" secondAttribute="top" id="UTj-9N-DWJ"/>
+                            <constraint firstItem="KeQ-0B-Nbf" firstAttribute="centerX" secondItem="r0O-Tq-32f" secondAttribute="centerX" id="g45-fa-4v5"/>
                             <constraint firstItem="WYa-be-1AR" firstAttribute="leading" secondItem="r0O-Tq-32f" secondAttribute="leading" constant="16" id="kFL-Xd-hsb"/>
                             <constraint firstItem="lFk-o7-6My" firstAttribute="centerY" secondItem="r0O-Tq-32f" secondAttribute="centerY" id="saO-0m-TBa"/>
-                            <constraint firstItem="WYa-be-1AR" firstAttribute="top" secondItem="r0O-Tq-32f" secondAttribute="top" constant="20" id="tKb-f6-E43"/>
+                            <constraint firstItem="WYa-be-1AR" firstAttribute="top" secondItem="KeQ-0B-Nbf" secondAttribute="bottom" constant="43" id="xlH-8l-vGL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="r0O-Tq-32f"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calibrar" id="PfP-it-y6a"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="64w-Gy-O07" userLabel="First Responder" sceneMemberID="firstResponder"/>

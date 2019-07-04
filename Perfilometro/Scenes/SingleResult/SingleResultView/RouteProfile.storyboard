@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZrF-sa-Zrn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Resultados-->
+        <scene sceneID="Mrg-lK-ZxE">
+            <objects>
+                <viewController id="ZrF-sa-Zrn" customClass="SingleResultViewController" customModule="Perfilometro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8cY-VK-ykN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9Kh-zU-UCl">
+                                <rect key="frame" x="16" y="92" width="343" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9Kh-zU-UCl" secondAttribute="height" multiplier="82:55" priority="250" constant="135.76363636363635" id="Tz7-OU-V2e"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Trajeto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="i7t-7L-6k8">
+                                <rect key="frame" x="16" y="65.5" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Grafico do perfil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COh-cT-8Vh">
+                                <rect key="frame" x="16" y="240" width="124" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pista 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="sPe-c3-cEm">
+                                <rect key="frame" x="155" y="29" width="65" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyV-hf-dns">
+                                <rect key="frame" x="16" y="278" width="343" height="340"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jyV-hf-dns" secondAttribute="height" multiplier="246:133" priority="250" constant="-285.87218045112786" id="p0Q-By-sjE"/>
+                                </constraints>
+                            </sceneKitView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i7t-7L-6k8" firstAttribute="leading" secondItem="Ent-ES-LfA" secondAttribute="leading" constant="16" id="3hN-wm-SwL"/>
+                            <constraint firstItem="9Kh-zU-UCl" firstAttribute="leading" secondItem="Ent-ES-LfA" secondAttribute="leading" constant="16" id="5Fx-vp-s65"/>
+                            <constraint firstItem="jyV-hf-dns" firstAttribute="leading" secondItem="Ent-ES-LfA" secondAttribute="leading" constant="16" id="9bl-PF-aYd"/>
+                            <constraint firstItem="COh-cT-8Vh" firstAttribute="leading" secondItem="Ent-ES-LfA" secondAttribute="leading" constant="16" id="BeB-37-53z"/>
+                            <constraint firstItem="Ent-ES-LfA" firstAttribute="trailing" secondItem="jyV-hf-dns" secondAttribute="trailing" constant="16" id="FnO-x5-bYP"/>
+                            <constraint firstItem="sPe-c3-cEm" firstAttribute="centerX" secondItem="Ent-ES-LfA" secondAttribute="centerX" id="NN3-MF-r5l"/>
+                            <constraint firstItem="COh-cT-8Vh" firstAttribute="top" secondItem="9Kh-zU-UCl" secondAttribute="bottom" constant="9" id="VGl-08-Rko"/>
+                            <constraint firstItem="jyV-hf-dns" firstAttribute="top" secondItem="COh-cT-8Vh" secondAttribute="bottom" constant="17" id="aFT-Ub-BfJ"/>
+                            <constraint firstItem="i7t-7L-6k8" firstAttribute="top" secondItem="sPe-c3-cEm" secondAttribute="bottom" constant="10.5" id="e4A-cI-5gh"/>
+                            <constraint firstItem="9Kh-zU-UCl" firstAttribute="top" secondItem="i7t-7L-6k8" secondAttribute="bottom" constant="5.6666666666666714" id="hws-CE-ZST"/>
+                            <constraint firstItem="Ent-ES-LfA" firstAttribute="trailing" secondItem="9Kh-zU-UCl" secondAttribute="trailing" constant="16" id="rva-jb-9a0"/>
+                            <constraint firstItem="sPe-c3-cEm" firstAttribute="top" secondItem="Ent-ES-LfA" secondAttribute="top" constant="9" id="x6i-3O-pU5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ent-ES-LfA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Resultados" id="WIk-vx-EvY"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="graph" destination="jyV-hf-dns" id="JAx-6f-6Dm"/>
+                        <outlet property="routeInMap" destination="9Kh-zU-UCl" id="UKX-Tb-DQn"/>
+                        <outlet property="routeName" destination="sPe-c3-cEm" id="Sj9-do-byi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RNU-QQ-yfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58.399999999999999" y="160.56971514242881"/>
+        </scene>
+    </scenes>
+</document>

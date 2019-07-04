@@ -23,31 +23,32 @@
 		AD90236622924C0000AE7D78 /* FindRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90236022924C0000AE7D78 /* FindRouteViewController.swift */; };
 		AD90236722924C0000AE7D78 /* FindRouteInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD90236122924C0000AE7D78 /* FindRouteInteractor.swift */; };
 		ADE7BDBF2296DDCA003784EC /* mapStyle.json in Resources */ = {isa = PBXBuildFile; fileRef = ADE7BDBE2296DDCA003784EC /* mapStyle.json */; };
-		ADEFE3D722B3C8BC0014B684 /* UIButtonDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3D622B3C8BC0014B684 /* UIButtonDesignable.swift */; };
-		ADEFE3DE22B3CAE60014B684 /* CalibrateSensorsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3D822B3CAE60014B684 /* CalibrateSensorsPresenter.swift */; };
-		ADEFE3DF22B3CAE60014B684 /* CalibrateSensorsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3D922B3CAE60014B684 /* CalibrateSensorsWorker.swift */; };
-		ADEFE3E022B3CAE60014B684 /* CalibrateSensorsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3DA22B3CAE60014B684 /* CalibrateSensorsRouter.swift */; };
-		ADEFE3E122B3CAE60014B684 /* CalibrateSensorsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3DB22B3CAE60014B684 /* CalibrateSensorsModels.swift */; };
-		ADEFE3E222B3CAE60014B684 /* CalibrateSensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3DC22B3CAE60014B684 /* CalibrateSensorsViewController.swift */; };
-		ADEFE3E322B3CAE60014B684 /* CalibrateSensorsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3DD22B3CAE60014B684 /* CalibrateSensorsInteractor.swift */; };
-		ADEFE3EB22B3CBEC0014B684 /* RouteResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3E522B3CBEC0014B684 /* RouteResultsPresenter.swift */; };
-		ADEFE3EC22B3CBEC0014B684 /* RouteResultsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3E622B3CBEC0014B684 /* RouteResultsWorker.swift */; };
-		ADEFE3ED22B3CBEC0014B684 /* RouteResultsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3E722B3CBEC0014B684 /* RouteResultsRouter.swift */; };
-		ADEFE3EE22B3CBEC0014B684 /* RouteResultsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3E822B3CBEC0014B684 /* RouteResultsModels.swift */; };
-		ADEFE3EF22B3CBEC0014B684 /* RouteResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3E922B3CBEC0014B684 /* RouteResultsViewController.swift */; };
-		ADEFE3F022B3CBEC0014B684 /* RouteResultsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3EA22B3CBEC0014B684 /* RouteResultsInteractor.swift */; };
-		ADEFE3FA22B3CC350014B684 /* RouteProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3F422B3CC350014B684 /* RouteProfilePresenter.swift */; };
-		ADEFE3FB22B3CC350014B684 /* RouteProfileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3F522B3CC350014B684 /* RouteProfileWorker.swift */; };
-		ADEFE3FC22B3CC350014B684 /* RouteProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3F622B3CC350014B684 /* RouteProfileRouter.swift */; };
-		ADEFE3FD22B3CC350014B684 /* RouteProfileModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3F722B3CC350014B684 /* RouteProfileModels.swift */; };
-		ADEFE3FE22B3CC350014B684 /* RouteProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3F822B3CC350014B684 /* RouteProfileViewController.swift */; };
-		ADEFE3FF22B3CC350014B684 /* RouteProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEFE3F922B3CC350014B684 /* RouteProfileInteractor.swift */; };
+		D4AA715F22B3DA440095B252 /* SingleResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA715E22B3DA440095B252 /* SingleResultViewController.swift */; };
+		D4AA716222B3DFD60095B252 /* road.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA716122B3DFD60095B252 /* road.swift */; };
+		D4AA718A22B6B5570095B252 /* ExempleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA718922B6B5570095B252 /* ExempleData.swift */; };
+		D4AA719822B700770095B252 /* CalibrateView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AA719722B700770095B252 /* CalibrateView.storyboard */; };
+		D4AA719F22B742F40095B252 /* CalibrateSensorsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA719922B742F40095B252 /* CalibrateSensorsModels.swift */; };
+		D4AA71A022B742F40095B252 /* CalibrateSensorsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA719A22B742F40095B252 /* CalibrateSensorsInteractor.swift */; };
+		D4AA71A122B742F40095B252 /* CalibrateSensorsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA719B22B742F40095B252 /* CalibrateSensorsWorker.swift */; };
+		D4AA71A222B742F40095B252 /* CalibrateSensorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA719C22B742F40095B252 /* CalibrateSensorsViewController.swift */; };
+		D4AA71A322B742F40095B252 /* CalibrateSensorsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA719D22B742F40095B252 /* CalibrateSensorsPresenter.swift */; };
+		D4AA71A422B742F40095B252 /* CalibrateSensorsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA719E22B742F40095B252 /* CalibrateSensorsRouter.swift */; };
+		D4AA71B122B745210095B252 /* RouteResultsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71A622B745210095B252 /* RouteResultsModels.swift */; };
+		D4AA71B222B745210095B252 /* RouteResultsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71A722B745210095B252 /* RouteResultsWorker.swift */; };
+		D4AA71B322B745210095B252 /* RouteResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71A822B745210095B252 /* RouteResultsPresenter.swift */; };
+		D4AA71B422B745210095B252 /* RouteResultsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71A922B745210095B252 /* RouteResultsRouter.swift */; };
+		D4AA71B522B745210095B252 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71AA22B745210095B252 /* ResultsTableViewCell.swift */; };
+		D4AA71B622B745210095B252 /* RouteResultsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71AB22B745210095B252 /* RouteResultsInteractor.swift */; };
+		D4AA71B722B745210095B252 /* RouteResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71AC22B745210095B252 /* RouteResultsViewController.swift */; };
+		D4AA71B822B745210095B252 /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71AD22B745210095B252 /* ResultsTableViewController.swift */; };
+		D4AA71B922B745210095B252 /* ResultsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4AA71AF22B745210095B252 /* ResultsView.storyboard */; };
+		D4AA71BA22B745210095B252 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4AA71B022B745210095B252 /* ResultTableViewCell.xib */; };
+		D4AA71C022B75D7C0095B252 /* CameraControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71BF22B75D7C0095B252 /* CameraControll.swift */; };
+		D4AA71C222B75D940095B252 /* MoveCameraDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA71C122B75D940095B252 /* MoveCameraDelegate.swift */; };
 		D4DC652A22987AB400A74C2D /* HTTPNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652622987AB400A74C2D /* HTTPNetworkManager.swift */; };
 		D4DC652B22987AB400A74C2D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652722987AB400A74C2D /* Endpoint.swift */; };
 		D4DC652C22987AB400A74C2D /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC652922987AB400A74C2D /* BluetoothManager.swift */; };
-		D4DC653922987ACC00A74C2D /* ResultsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DC652F22987ACC00A74C2D /* ResultsView.storyboard */; };
 		D4DC653A22987ACC00A74C2D /* RouteProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DC653022987ACC00A74C2D /* RouteProfile.storyboard */; };
-		D4DC653B22987ACC00A74C2D /* CalibrateView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DC653222987ACC00A74C2D /* CalibrateView.storyboard */; };
 		D4DC653C22987ACC00A74C2D /* TraceRouteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DC653422987ACC00A74C2D /* TraceRouteView.storyboard */; };
 		D4DC653D22987ACC00A74C2D /* RegisterRoute.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DC653522987ACC00A74C2D /* RegisterRoute.storyboard */; };
 		D4DC653E22987ACC00A74C2D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC653722987ACC00A74C2D /* TabBarViewController.swift */; };
@@ -100,31 +101,34 @@
 		ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		ADE7BDBE2296DDCA003784EC /* mapStyle.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mapStyle.json; sourceTree = "<group>"; };
 		ADEFE3D622B3C8BC0014B684 /* UIButtonDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonDesignable.swift; sourceTree = "<group>"; };
-		ADEFE3D822B3CAE60014B684 /* CalibrateSensorsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateSensorsPresenter.swift; sourceTree = "<group>"; };
-		ADEFE3D922B3CAE60014B684 /* CalibrateSensorsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateSensorsWorker.swift; sourceTree = "<group>"; };
-		ADEFE3DA22B3CAE60014B684 /* CalibrateSensorsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateSensorsRouter.swift; sourceTree = "<group>"; };
-		ADEFE3DB22B3CAE60014B684 /* CalibrateSensorsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateSensorsModels.swift; sourceTree = "<group>"; };
-		ADEFE3DC22B3CAE60014B684 /* CalibrateSensorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateSensorsViewController.swift; sourceTree = "<group>"; };
-		ADEFE3DD22B3CAE60014B684 /* CalibrateSensorsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalibrateSensorsInteractor.swift; sourceTree = "<group>"; };
-		ADEFE3E522B3CBEC0014B684 /* RouteResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteResultsPresenter.swift; sourceTree = "<group>"; };
-		ADEFE3E622B3CBEC0014B684 /* RouteResultsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteResultsWorker.swift; sourceTree = "<group>"; };
-		ADEFE3E722B3CBEC0014B684 /* RouteResultsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteResultsRouter.swift; sourceTree = "<group>"; };
-		ADEFE3E822B3CBEC0014B684 /* RouteResultsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteResultsModels.swift; sourceTree = "<group>"; };
-		ADEFE3E922B3CBEC0014B684 /* RouteResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteResultsViewController.swift; sourceTree = "<group>"; };
-		ADEFE3EA22B3CBEC0014B684 /* RouteResultsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteResultsInteractor.swift; sourceTree = "<group>"; };
-		ADEFE3F422B3CC350014B684 /* RouteProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProfilePresenter.swift; sourceTree = "<group>"; };
-		ADEFE3F522B3CC350014B684 /* RouteProfileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProfileWorker.swift; sourceTree = "<group>"; };
-		ADEFE3F622B3CC350014B684 /* RouteProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProfileRouter.swift; sourceTree = "<group>"; };
-		ADEFE3F722B3CC350014B684 /* RouteProfileModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProfileModels.swift; sourceTree = "<group>"; };
-		ADEFE3F822B3CC350014B684 /* RouteProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProfileViewController.swift; sourceTree = "<group>"; };
-		ADEFE3F922B3CC350014B684 /* RouteProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteProfileInteractor.swift; sourceTree = "<group>"; };
 		B47A552EC6E6084F2A96A37C /* Pods-Perfilometro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perfilometro.debug.xcconfig"; path = "Target Support Files/Pods-Perfilometro/Pods-Perfilometro.debug.xcconfig"; sourceTree = "<group>"; };
 		BF347317AF56AFC29B073037 /* Pods_PerfilometroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfilometroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D445D0612295DE33007960E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4AA715E22B3DA440095B252 /* SingleResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResultViewController.swift; sourceTree = "<group>"; };
+		D4AA716122B3DFD60095B252 /* road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = road.swift; sourceTree = "<group>"; };
+		D4AA718922B6B5570095B252 /* ExempleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExempleData.swift; sourceTree = "<group>"; };
+		D4AA719722B700770095B252 /* CalibrateView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalibrateView.storyboard; sourceTree = "<group>"; };
+		D4AA719922B742F40095B252 /* CalibrateSensorsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalibrateSensorsModels.swift; path = Perfilometro/Scenes/Calibrate/CalibrateSensorsModels.swift; sourceTree = SOURCE_ROOT; };
+		D4AA719A22B742F40095B252 /* CalibrateSensorsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalibrateSensorsInteractor.swift; path = Perfilometro/Scenes/Calibrate/CalibrateSensorsInteractor.swift; sourceTree = SOURCE_ROOT; };
+		D4AA719B22B742F40095B252 /* CalibrateSensorsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalibrateSensorsWorker.swift; path = Perfilometro/Scenes/Calibrate/CalibrateSensorsWorker.swift; sourceTree = SOURCE_ROOT; };
+		D4AA719C22B742F40095B252 /* CalibrateSensorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalibrateSensorsViewController.swift; path = Perfilometro/Scenes/Calibrate/CalibrateSensorsViewController.swift; sourceTree = SOURCE_ROOT; };
+		D4AA719D22B742F40095B252 /* CalibrateSensorsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalibrateSensorsPresenter.swift; path = Perfilometro/Scenes/Calibrate/CalibrateSensorsPresenter.swift; sourceTree = SOURCE_ROOT; };
+		D4AA719E22B742F40095B252 /* CalibrateSensorsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalibrateSensorsRouter.swift; path = Perfilometro/Scenes/Calibrate/CalibrateSensorsRouter.swift; sourceTree = SOURCE_ROOT; };
+		D4AA71A622B745210095B252 /* RouteResultsModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResultsModels.swift; sourceTree = "<group>"; };
+		D4AA71A722B745210095B252 /* RouteResultsWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResultsWorker.swift; sourceTree = "<group>"; };
+		D4AA71A822B745210095B252 /* RouteResultsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResultsPresenter.swift; sourceTree = "<group>"; };
+		D4AA71A922B745210095B252 /* RouteResultsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResultsRouter.swift; sourceTree = "<group>"; };
+		D4AA71AA22B745210095B252 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
+		D4AA71AB22B745210095B252 /* RouteResultsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResultsInteractor.swift; sourceTree = "<group>"; };
+		D4AA71AC22B745210095B252 /* RouteResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResultsViewController.swift; sourceTree = "<group>"; };
+		D4AA71AD22B745210095B252 /* ResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		D4AA71AF22B745210095B252 /* ResultsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultsView.storyboard; sourceTree = "<group>"; };
+		D4AA71B022B745210095B252 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
+		D4AA71BF22B75D7C0095B252 /* CameraControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControll.swift; sourceTree = "<group>"; };
+		D4AA71C122B75D940095B252 /* MoveCameraDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCameraDelegate.swift; sourceTree = "<group>"; };
 		D4DC652622987AB400A74C2D /* HTTPNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPNetworkManager.swift; sourceTree = "<group>"; };
 		D4DC652722987AB400A74C2D /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		D4DC652922987AB400A74C2D /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
-		D4DC652F22987ACC00A74C2D /* ResultsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResultsView.storyboard; sourceTree = "<group>"; };
 		D4DC653022987ACC00A74C2D /* RouteProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RouteProfile.storyboard; sourceTree = "<group>"; };
 		D4DC653222987ACC00A74C2D /* CalibrateView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CalibrateView.storyboard; sourceTree = "<group>"; };
 		D4DC653422987ACC00A74C2D /* TraceRouteView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TraceRouteView.storyboard; sourceTree = "<group>"; };
@@ -211,7 +215,7 @@
 		AD750BA7226FEF8000140400 /* Perfilometro */ = {
 			isa = PBXGroup;
 			children = (
-				D4DC652D22987ACC00A74C2D /* Views */,
+				D4AA716022B3DCDC0095B252 /* Model */,
 				D4DC652422987AB400A74C2D /* Network */,
 				ADE7BDBC2296DC7D003784EC /* Helpers */,
 				AD90231A229240DD00AE7D78 /* Scenes */,
@@ -252,15 +256,15 @@
 		AD90231A229240DD00AE7D78 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				ADEFE3F222B3CC030014B684 /* Route Profile */,
-				ADEFE3F122B3CBF20014B684 /* Results */,
-				ADEFE3E422B3CAED0014B684 /* Calibrate */,
-				AD90236822924C0D00AE7D78 /* Find Route */,
+				D4AA71A522B745210095B252 /* Results */,
+				D4AA715A22B3D9420095B252 /* SingleResult */,
+				D4AA714B22B3CAAE0095B252 /* Calibrate */,
+				AD90236822924C0D00AE7D78 /* FindRoute */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		AD90236822924C0D00AE7D78 /* Find Route */ = {
+		AD90236822924C0D00AE7D78 /* FindRoute */ = {
 			isa = PBXGroup;
 			children = (
 				AD90235C22924C0000AE7D78 /* FindRoutePresenter.swift */,
@@ -269,9 +273,9 @@
 				AD90235F22924C0000AE7D78 /* FindRouteModels.swift */,
 				AD90236022924C0000AE7D78 /* FindRouteViewController.swift */,
 				AD90236122924C0000AE7D78 /* FindRouteInteractor.swift */,
-				D4DC654022987B0100A74C2D /* View */,
+				D4DC654022987B0100A74C2D /* FindRouteView */,
 			);
-			path = "Find Route";
+			path = FindRoute;
 			sourceTree = "<group>";
 		};
 		ADE3F7AD228515370094A699 /* Supporting Files */ = {
@@ -309,76 +313,78 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
-		ADEFE3E422B3CAED0014B684 /* Calibrate */ = {
+		D4AA714B22B3CAAE0095B252 /* Calibrate */ = {
 			isa = PBXGroup;
 			children = (
-				ADEFE40222B3CC5B0014B684 /* View */,
-				ADEFE3D822B3CAE60014B684 /* CalibrateSensorsPresenter.swift */,
-				ADEFE3D922B3CAE60014B684 /* CalibrateSensorsWorker.swift */,
-				ADEFE3DA22B3CAE60014B684 /* CalibrateSensorsRouter.swift */,
-				ADEFE3DB22B3CAE60014B684 /* CalibrateSensorsModels.swift */,
-				ADEFE3DC22B3CAE60014B684 /* CalibrateSensorsViewController.swift */,
-				ADEFE3DD22B3CAE60014B684 /* CalibrateSensorsInteractor.swift */,
+				D4AA719A22B742F40095B252 /* CalibrateSensorsInteractor.swift */,
+				D4AA719922B742F40095B252 /* CalibrateSensorsModels.swift */,
+				D4AA719D22B742F40095B252 /* CalibrateSensorsPresenter.swift */,
+				D4AA719E22B742F40095B252 /* CalibrateSensorsRouter.swift */,
+				D4AA719C22B742F40095B252 /* CalibrateSensorsViewController.swift */,
+				D4AA719B22B742F40095B252 /* CalibrateSensorsWorker.swift */,
+				D4DC653122987ACC00A74C2D /* CalibrateView */,
 			);
 			path = Calibrate;
 			sourceTree = "<group>";
 		};
-		ADEFE3F122B3CBF20014B684 /* Results */ = {
+		D4AA715A22B3D9420095B252 /* SingleResult */ = {
 			isa = PBXGroup;
 			children = (
-				ADEFE40122B3CC550014B684 /* View */,
-				ADEFE3E522B3CBEC0014B684 /* RouteResultsPresenter.swift */,
-				ADEFE3E622B3CBEC0014B684 /* RouteResultsWorker.swift */,
-				ADEFE3E722B3CBEC0014B684 /* RouteResultsRouter.swift */,
-				ADEFE3E822B3CBEC0014B684 /* RouteResultsModels.swift */,
-				ADEFE3E922B3CBEC0014B684 /* RouteResultsViewController.swift */,
-				ADEFE3EA22B3CBEC0014B684 /* RouteResultsInteractor.swift */,
+				D4AA718922B6B5570095B252 /* ExempleData.swift */,
+				D4AA715E22B3DA440095B252 /* SingleResultViewController.swift */,
+				D4AA71BF22B75D7C0095B252 /* CameraControll.swift */,
+				D4AA71C122B75D940095B252 /* MoveCameraDelegate.swift */,
+				D4AA715D22B3DA1E0095B252 /* SingleResultView */,
 			);
-			path = Results;
+			path = SingleResult;
 			sourceTree = "<group>";
 		};
-		ADEFE3F222B3CC030014B684 /* Route Profile */ = {
-			isa = PBXGroup;
-			children = (
-				ADEFE40022B3CC4C0014B684 /* View */,
-				ADEFE3F422B3CC350014B684 /* RouteProfilePresenter.swift */,
-				ADEFE3F522B3CC350014B684 /* RouteProfileWorker.swift */,
-				ADEFE3F622B3CC350014B684 /* RouteProfileRouter.swift */,
-				ADEFE3F722B3CC350014B684 /* RouteProfileModels.swift */,
-				ADEFE3F822B3CC350014B684 /* RouteProfileViewController.swift */,
-				ADEFE3F922B3CC350014B684 /* RouteProfileInteractor.swift */,
-			);
-			path = "Route Profile";
-			sourceTree = "<group>";
-		};
-		ADEFE40022B3CC4C0014B684 /* View */ = {
+		D4AA715D22B3DA1E0095B252 /* SingleResultView */ = {
 			isa = PBXGroup;
 			children = (
 				D4DC653022987ACC00A74C2D /* RouteProfile.storyboard */,
 			);
-			path = View;
+			path = SingleResultView;
 			sourceTree = "<group>";
 		};
-		ADEFE40122B3CC550014B684 /* View */ = {
+		D4AA716022B3DCDC0095B252 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D4DC652F22987ACC00A74C2D /* ResultsView.storyboard */,
+				D4AA716122B3DFD60095B252 /* road.swift */,
 			);
-			path = View;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		ADEFE40222B3CC5B0014B684 /* View */ = {
+		D4AA71A522B745210095B252 /* Results */ = {
 			isa = PBXGroup;
 			children = (
-				D4DC653222987ACC00A74C2D /* CalibrateView.storyboard */,
+				D4AA71A622B745210095B252 /* RouteResultsModels.swift */,
+				D4AA71A722B745210095B252 /* RouteResultsWorker.swift */,
+				D4AA71A822B745210095B252 /* RouteResultsPresenter.swift */,
+				D4AA71A922B745210095B252 /* RouteResultsRouter.swift */,
+				D4AA71AA22B745210095B252 /* ResultsTableViewCell.swift */,
+				D4AA71AB22B745210095B252 /* RouteResultsInteractor.swift */,
+				D4AA71AC22B745210095B252 /* RouteResultsViewController.swift */,
+				D4AA71AD22B745210095B252 /* ResultsTableViewController.swift */,
+				D4AA71AE22B745210095B252 /* ResultsView */,
 			);
-			path = View;
+			path = Results;
+			sourceTree = "<group>";
+		};
+		D4AA71AE22B745210095B252 /* ResultsView */ = {
+			isa = PBXGroup;
+			children = (
+				D4AA71AF22B745210095B252 /* ResultsView.storyboard */,
+				D4AA71B022B745210095B252 /* ResultTableViewCell.xib */,
+			);
+			path = ResultsView;
 			sourceTree = "<group>";
 		};
 		D4DC65232298791C00A74C2D /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				ADE3F7B3228515EF0094A699 /* BluetoothManager.swift */,
+				D4DC653222987ACC00A74C2D /* CalibrateView.storyboard */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -409,27 +415,12 @@
 			path = Bluetooth;
 			sourceTree = "<group>";
 		};
-		D4DC652D22987ACC00A74C2D /* Views */ = {
+		D4DC653122987ACC00A74C2D /* CalibrateView */ = {
 			isa = PBXGroup;
 			children = (
-				D4DC652E22987ACC00A74C2D /* Results */,
-				D4DC653122987ACC00A74C2D /* Calibrate */,
+				D4AA719722B700770095B252 /* CalibrateView.storyboard */,
 			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		D4DC652E22987ACC00A74C2D /* Results */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Results;
-			sourceTree = "<group>";
-		};
-		D4DC653122987ACC00A74C2D /* Calibrate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Calibrate;
+			path = CalibrateView;
 			sourceTree = "<group>";
 		};
 		D4DC653322987ACC00A74C2D /* TraceRoute */ = {
@@ -450,13 +441,13 @@
 			path = TabBarController;
 			sourceTree = "<group>";
 		};
-		D4DC654022987B0100A74C2D /* View */ = {
+		D4DC654022987B0100A74C2D /* FindRouteView */ = {
 			isa = PBXGroup;
 			children = (
 				D4DC653322987ACC00A74C2D /* TraceRoute */,
 				D4DC654122987B0100A74C2D /* FindRouteView.storyboard */,
 			);
-			path = View;
+			path = FindRouteView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -570,7 +561,8 @@
 			files = (
 				AD750BB3226FEF8200140400 /* LaunchScreen.storyboard in Resources */,
 				D4DC653C22987ACC00A74C2D /* TraceRouteView.storyboard in Resources */,
-				D4DC653922987ACC00A74C2D /* ResultsView.storyboard in Resources */,
+				D4AA71BA22B745210095B252 /* ResultTableViewCell.xib in Resources */,
+				D4AA719822B700770095B252 /* CalibrateView.storyboard in Resources */,
 				D4DC653F22987ACC00A74C2D /* TabBarViewController.storyboard in Resources */,
 				D4DC654222987B0100A74C2D /* FindRouteView.storyboard in Resources */,
 				AD9023182292403700AE7D78 /* TabBarViewController2.storyboard in Resources */,
@@ -578,7 +570,7 @@
 				ADE7BDBF2296DDCA003784EC /* mapStyle.json in Resources */,
 				D4DC653A22987ACC00A74C2D /* RouteProfile.storyboard in Resources */,
 				AD750BB0226FEF8200140400 /* Assets.xcassets in Resources */,
-				D4DC653B22987ACC00A74C2D /* CalibrateView.storyboard in Resources */,
+				D4AA71B922B745210095B252 /* ResultsView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,36 +710,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADEFE3E222B3CAE60014B684 /* CalibrateSensorsViewController.swift in Sources */,
+				D4AA71A422B742F40095B252 /* CalibrateSensorsRouter.swift in Sources */,
 				AD90236422924C0000AE7D78 /* FindRouteRouter.swift in Sources */,
-				ADEFE3ED22B3CBEC0014B684 /* RouteResultsRouter.swift in Sources */,
-				ADEFE3FE22B3CC350014B684 /* RouteProfileViewController.swift in Sources */,
-				ADEFE3FB22B3CC350014B684 /* RouteProfileWorker.swift in Sources */,
+				D4AA71B322B745210095B252 /* RouteResultsPresenter.swift in Sources */,
 				D4DC652A22987AB400A74C2D /* HTTPNetworkManager.swift in Sources */,
+				D4AA71B122B745210095B252 /* RouteResultsModels.swift in Sources */,
+				D4AA71B422B745210095B252 /* RouteResultsRouter.swift in Sources */,
+				D4AA719F22B742F40095B252 /* CalibrateSensorsModels.swift in Sources */,
+				D4AA71A022B742F40095B252 /* CalibrateSensorsInteractor.swift in Sources */,
+				D4AA71B822B745210095B252 /* ResultsTableViewController.swift in Sources */,
 				AD90236522924C0000AE7D78 /* FindRouteModels.swift in Sources */,
-				ADEFE3E322B3CAE60014B684 /* CalibrateSensorsInteractor.swift in Sources */,
+				D4AA71B622B745210095B252 /* RouteResultsInteractor.swift in Sources */,
+				D4AA71A222B742F40095B252 /* CalibrateSensorsViewController.swift in Sources */,
 				AD90236622924C0000AE7D78 /* FindRouteViewController.swift in Sources */,
 				D4DC653E22987ACC00A74C2D /* TabBarViewController.swift in Sources */,
+				D4AA715F22B3DA440095B252 /* SingleResultViewController.swift in Sources */,
 				D4DC652B22987AB400A74C2D /* Endpoint.swift in Sources */,
+				D4AA71C222B75D940095B252 /* MoveCameraDelegate.swift in Sources */,
 				AD750BA9226FEF8000140400 /* AppDelegate.swift in Sources */,
-				ADEFE3EE22B3CBEC0014B684 /* RouteResultsModels.swift in Sources */,
-				ADEFE3F022B3CBEC0014B684 /* RouteResultsInteractor.swift in Sources */,
+				D4AA716222B3DFD60095B252 /* road.swift in Sources */,
 				AD90236322924C0000AE7D78 /* FindRouteWorker.swift in Sources */,
-				ADEFE3FC22B3CC350014B684 /* RouteProfileRouter.swift in Sources */,
-				ADEFE3FF22B3CC350014B684 /* RouteProfileInteractor.swift in Sources */,
+				D4AA71C022B75D7C0095B252 /* CameraControll.swift in Sources */,
 				AD90236222924C0000AE7D78 /* FindRoutePresenter.swift in Sources */,
-				ADEFE3DF22B3CAE60014B684 /* CalibrateSensorsWorker.swift in Sources */,
-				ADEFE3DE22B3CAE60014B684 /* CalibrateSensorsPresenter.swift in Sources */,
+				D4AA71B722B745210095B252 /* RouteResultsViewController.swift in Sources */,
 				AD90236722924C0000AE7D78 /* FindRouteInteractor.swift in Sources */,
+				D4AA718A22B6B5570095B252 /* ExempleData.swift in Sources */,
+				D4AA71B222B745210095B252 /* RouteResultsWorker.swift in Sources */,
+				D4AA71A122B742F40095B252 /* CalibrateSensorsWorker.swift in Sources */,
+				D4AA71A322B742F40095B252 /* CalibrateSensorsPresenter.swift in Sources */,
 				D4DC652C22987AB400A74C2D /* BluetoothManager.swift in Sources */,
-				ADEFE3EB22B3CBEC0014B684 /* RouteResultsPresenter.swift in Sources */,
-				ADEFE3D722B3C8BC0014B684 /* UIButtonDesignable.swift in Sources */,
-				ADEFE3E022B3CAE60014B684 /* CalibrateSensorsRouter.swift in Sources */,
-				ADEFE3EF22B3CBEC0014B684 /* RouteResultsViewController.swift in Sources */,
-				ADEFE3EC22B3CBEC0014B684 /* RouteResultsWorker.swift in Sources */,
-				ADEFE3FA22B3CC350014B684 /* RouteProfilePresenter.swift in Sources */,
-				ADEFE3E122B3CAE60014B684 /* CalibrateSensorsModels.swift in Sources */,
-				ADEFE3FD22B3CC350014B684 /* RouteProfileModels.swift in Sources */,
+				D4AA71B522B745210095B252 /* ResultsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -918,7 +910,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9WNM2GU386;
+				DEVELOPMENT_TEAM = 7CN8A9X5L6;
 				INFOPLIST_FILE = Perfilometro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -938,7 +930,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9WNM2GU386;
+				DEVELOPMENT_TEAM = 7CN8A9X5L6;
 				INFOPLIST_FILE = Perfilometro/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
