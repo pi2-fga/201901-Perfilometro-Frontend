@@ -24,6 +24,18 @@ class MQTT_Manager {
         mqttClient?.password = "xL0pD1ldNz9u"//"iOSApp"
         mqttClient?.delegate = self
     }
+    
+    func turnSensorsOn () {
+        mqttClient?.publish("sensors", withString: "on")
+    }
+    
+    func turnSensorsOff () {
+        mqttClient?.publish("sensors", withString: "off")
+    }
+    
+    func calibrateSensors() {
+        mqttClient?.publish("sensors", withString: "calibrate")
+    }
 }
 
 extension MQTT_Manager: CocoaMQTTDelegate {
