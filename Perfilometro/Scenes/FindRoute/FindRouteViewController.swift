@@ -23,7 +23,13 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
     @IBOutlet weak var buttonStart: UIBarButtonItem!
     
     var locationManager = CLLocationManager()
-    lazy var mapView = GMSMapView()
+    var mapView: GMSMapView!// = GMSMapView()
+    var camera: GMSCameraPosition!
+    lazy var mqtt_manager = MQTT_Manager()
+    
+    lazy var reportCenterX = reportBtn.centerXAnchor.constraint(equalTo: self.view.layoutMarginsGuide.centerXAnchor)
+    lazy var reportWidth = reportBtn.widthAnchor.constraint(equalToConstant: 366)
+    lazy var reportHeight = reportBtn.heightAnchor.constraint(equalToConstant: 122)
     
     // MARK: - Variables
     
@@ -46,6 +52,7 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
         setup()
     }
 
+    
     // MARK: Setup
 
     private func setup() {
@@ -74,12 +81,18 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
 
     // MARK: View lifecycle
 
+    override func loadView() {
+        setupMapView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        doSomething()
-        
+//        setupMapView()
+        setReportBtn()
         setupLocationManager()
-        setupMapView()
+        
+        
     }
 
     // MARK: Do something
@@ -107,19 +120,28 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
     
 
     private func setupMapView() {
-        let camera = GMSCameraPosition.camera(withLatitude:  37.534343434,
+
+        camera = GMSCameraPosition.camera(withLatitude:  37.534343434,
                                               longitude: -121.32233232332,
                                               zoom: 13.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView = GMSMapView(frame: .zero)
         mapView.isMyLocationEnabled = true
+        mapView.camera = camera
         mapView.delegate = self
+        view = mapView
         
-        do {
-            if let styleURL = Bundle.main.url(forResource: "mapStyle", withExtension: "json") {
-                mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
-                self.mapView.addSubview(mapView)
-            } else { NSLog("Unable to find style.json") }
-        } catch { NSLog("One or more of the map styles failed to load. \(error)") }
+        
+        
+//        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+//        mapView.isMyLocationEnabled = true
+//        mapView.delegate = self
+//
+//        do {
+//            if let styleURL = Bundle.main.url(forResource: "mapStyle", withExtension: "json") {
+//                mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+//                self.mapView.addSubview(mapView)
+//            } else { NSLog("Unable to find style.json") }
+//        } catch { NSLog("One or more of the map styles failed to load. \(error)") }
         
 //        self.mapView.addSubview(mapView)
     }
@@ -128,7 +150,7 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.startUpdatingLocation()
+//        self.locationManager.startUpdatingLocation()
         locationManager.distanceFilter = 2.0
         if let startCoordinate = self.startCoordinate {
             self.mapView.animate(toLocation: startCoordinate)
@@ -143,12 +165,39 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
 //        marker.snippet = "Australia"
 //        marker.map = mapView
 //    }
+    func setReportBtn() {
+        
+        reportBtn = UIButton(type: .custom)
+        reportBtn.setImage(UIImage(named: "startBtn"), for: .normal)
+        reportBtn.addTarget(self, action: #selector(startPressed(sender:)), for: .touchUpInside)
+        reportBtn.contentMode = .scaleAspectFit
+        
+        self.mapView.addSubview(reportBtn)
+        
+        let margins = self.mapView.layoutMarginsGuide
+       
+        reportBtn.translatesAutoresizingMaskIntoConstraints = false
+        self.reportWidth.isActive = true
+        self.reportHeight.isActive = true
+        reportBtn.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: -30).isActive = true
+        self.reportCenterX.isActive = true
+    }
+    
+    @objc func startPressed(sender: UIButton!) {
+        mqtt_manager.turnSensorsOn()
+    }
+    
+    @objc func finishPressed(sender: UIButton!) {
+        mqtt_manager.turnSensorsOff()
+    }
 }
 
     
 
 extension FindRouteViewController: GMSMapViewDelegate {
-    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) { }
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        
+    }
 }
 
 extension FindRouteViewController: CLLocationManagerDelegate {
@@ -161,7 +210,7 @@ extension FindRouteViewController: CLLocationManagerDelegate {
                                               longitude: userLocation!.coordinate.longitude, zoom: 13.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
-        self.view = mapView
+//        self.view = mapView
         
         locationManager.stopUpdatingLocation()
     }
