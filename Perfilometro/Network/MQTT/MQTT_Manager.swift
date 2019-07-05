@@ -9,7 +9,6 @@
 import Foundation
 import CocoaMQTT
 
-
 class MQTT_Manager {
     
     var mqttClient: CocoaMQTT?
@@ -17,8 +16,7 @@ class MQTT_Manager {
     let mqttPort: UInt16 = 13504
     let clientID = "iOS App Device"
 
-    
-    func int() {
+    init() {
         mqttClient = CocoaMQTT(clientID: clientID, host:  mqttServerIP, port: mqttPort)
         mqttClient?.username = "ioqvlgfd"//"iOSApp"
         mqttClient?.password = "xL0pD1ldNz9u"//"iOSApp"
@@ -35,6 +33,14 @@ class MQTT_Manager {
     
     func calibrateSensors() {
         mqttClient?.publish("sensors", withString: "calibrate")
+    }
+    
+    func connectToRaspberry() {
+        mqttClient?.connect()
+    }
+    
+    func disconnectToRaspberry() {
+        mqttClient?.disconnect()
     }
 }
 

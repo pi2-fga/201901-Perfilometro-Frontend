@@ -6,11 +6,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Mapa-->
+        <!--MAPA-->
         <scene sceneID="bgT-YX-WuZ">
             <objects>
                 <viewController id="ORZ-5r-ShM" customClass="FindRouteViewController" customModule="Perfilometro" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,8 +21,19 @@
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7VU-kp-spK"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Mapa" id="mEm-Qr-DSs"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="5MZ-XW-DRk"/>
+                    <navigationItem key="navigationItem" title="MAPA" id="mEm-Qr-DSs">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="2fU-nD-6Ez">
+                            <color key="tintColor" name="mediumGray"/>
+                            <connections>
+                                <action selector="controlStateData:" destination="ORZ-5r-ShM" id="MEs-ja-fif"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonStart" destination="2fU-nD-6Ez" id="k1U-dV-FAH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M9r-7n-o02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,5 +63,8 @@
     </scenes>
     <resources>
         <image name="map" width="29" height="29"/>
+        <namedColor name="mediumGray">
+            <color red="0.32156862745098042" green="0.32156862745098042" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
