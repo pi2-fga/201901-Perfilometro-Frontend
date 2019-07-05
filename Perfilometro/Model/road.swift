@@ -9,12 +9,16 @@
 import Foundation
 
 class Road {
-    var information: String
-    var roadProfile: [Float]
+    var identifier: String
+    var date: String
+    var name: String
+    var lazers: [[Int]]
     
-    init(information: String, roadProfile: [Float]) {
-        self.information = information
-        self.roadProfile = roadProfile
+    init(identifier: String, date: String, name: String, lazers: [[Int]]) {
+        self.identifier = identifier
+        self.date = date
+        self.name = name
+        self.lazers = lazers
     }
     
 

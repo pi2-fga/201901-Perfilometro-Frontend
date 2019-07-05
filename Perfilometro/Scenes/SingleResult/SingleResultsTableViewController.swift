@@ -22,7 +22,7 @@ class SingleResultsTableViewController: UITableViewController, SCNSceneRendererD
     //    private var scnView: SCNView?
     private var object3D: SCNNode?
     private var chartNode:SCNNode!
-    var roadname: String?
+    var roadname: Road?
     
     let data = ExampleData()
     private var initialBlockPosition: SCNVector3 = SCNVector3(-2.0, 0.0, 0.0)

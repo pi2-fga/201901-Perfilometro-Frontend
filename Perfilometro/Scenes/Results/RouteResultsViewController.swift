@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 protocol RouteResultsDisplayLogic: class {
   func displaySomething(viewModel: RouteResults.Something.ViewModel)
@@ -42,42 +43,94 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
         router.viewController = viewController
         router.dataStore = interactor
     }
-
-    // MARK: Routing
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let scene = segue.identifier {
-//            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-//            if let router = router, router.responds(to: selector) {
-//                router.perform(selector, with: segue)
-//            }
-//        }
-//    }
-
+    
     // MARK: View lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSomething()
+        self.doSomething()
         setNibUp()
+        self.roads?.append(Road(identifier: "00", date: "0000", name: "000000", lazers: [[[0][1]]]))
     }
 
     // MARK: Do something
 
     //@IBOutlet weak var nameTextField: UITextField!
 
+//    func fetchAllRooms(completion: @escaping ([Road]?) -> Void) {
+//        guard let url = URL(string: "https://perfilometer-node.herokuapp.com/api/roads") else {
+//        completion(nil)
+//        return
+//        }
+//        AF.request(url, method: .get, parameters: nil, headers: ["api-version" : "0.1.0"], interceptor: nil).responseJSON(completionHandler: { (response) in
+//            switch response.result {
+//            case .success(let result):
+//                print("restul: ", result)
+//                completion(nil)
+//
+//
+//                if let resulted =  try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {//result as? [String: Any] {
+//
+//                    if let data = resulted["data"] as? NSArray {
+//                        let roads = data?["roads"]
+//                    }
+//
+//
+//                    for road in roads {
+//                        if let routeDict = route as? NSDictionary {
+//
+//
+//                        }
+//                    }
+//
+//
+//
+//                    for route in routes {
+//                        if let routeDict = route as? NSDictionary {
+//                            let polyline = routeDict["overview_polyline"] as! NSDictionary
+//
+//
+//                        }
+//
+//                    }
+//                }
+//
+//
+//                break
+//            case .failure(let error):
+//                print(error)
+//                completion(nil)
+//                break
+//            }
+//        })
+//    }
+    
+//        guard let value = response.result.value as? [String: Any],
+//        let rows = value["rows"] as? [[String: Any]] else {
+//        print("Malformed data received from fetchAllRooms service")
+//        completion(nil)
+//        return
+//        }
+//
+//        let rooms = rows.flatMap { roomDict in return RemoteRoom(jsonData: roomDict) }
+//        completion(rooms)
+//        }
+//        }
+    
     func doSomething() {
+//        self.fetchAllRooms { (roads) in
+//            print("roads", roads)
+//        }
         let request = RouteResults.Something.Request()
-        interactor?.doSomething(request: request)
+//        interactor?.doSomething(request: request)
     }
 
     func displaySomething(viewModel: RouteResults.Something.ViewModel) {
         //nameTextField.text = viewModel.name
     }
     
-    let roads: [String] = ["EPIA", "EPGU"]
+    var roads: [Road]?
     
-    var road: String?
+    var road: Road?
     let segueId = "result"
     
     // MARK: - Table view data source
@@ -89,7 +142,7 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return roads.count
+        return roads!.count
     }
     
     private func setNibUp() {
@@ -99,7 +152,7 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ResultsTableViewCell
-        cell.setRoadName(name: roads[indexPath.row])
+        cell.setRoadName(name: roads?[indexPath.row].name ?? "")
         
         
         return cell
@@ -107,13 +160,13 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueId {
-//            let singleResultView: SingleResultsTableViewController = segue.destination as! SingleResultsTableViewController
-//            singleResultView.roadname = self.road
+            let singleResultView: SingleResultsTableViewController = segue.destination as! SingleResultsTableViewController
+            singleResultView.roadname = self.road
         }
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.road = self.roads[indexPath.row]
+        self.road = self.roads?[indexPath.row]
         performSegue(withIdentifier: segueId, sender: nil)
         
     }
