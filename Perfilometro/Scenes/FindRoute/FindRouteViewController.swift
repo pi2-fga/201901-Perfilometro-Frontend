@@ -17,7 +17,10 @@ protocol FindRouteDisplayLogic: class {
 
 class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
     
+    var isPressed: Bool = false
+    
     // MARK: - Outlet
+    @IBOutlet weak var buttonStart: UIBarButtonItem!
     
     var locationManager = CLLocationManager()
     lazy var mapView = GMSMapView()
@@ -85,7 +88,21 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
         let request = FindRoute.Something.Request()
         interactor?.doSomething(request: request)
     }
-
+    @IBAction func controlStateData(_ sender: Any) {
+        let alert = UIAlertController(title: "My Alert", message: "This is an alert.", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Começar", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Parar", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Cancelar", comment: "Default action"), style: .cancel, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func displaySomething(viewModel: FindRoute.Something.ViewModel) { }
     
 
@@ -118,7 +135,8 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
         }
     }
     
-//    private func createMarkerView() {
+    @IBOutlet weak var backgroundView: UIView!
+    //    private func createMarkerView() {
 //        let marker = GMSMarker()
 //        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
 //        marker.title = "Sydney"
