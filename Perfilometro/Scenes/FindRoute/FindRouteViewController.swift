@@ -20,14 +20,16 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
     var isPressed: Bool = false
     
     // MARK: - Outlet
+   
     @IBOutlet weak var buttonStart: UIBarButtonItem!
     
-    var locationManager = CLLocationManager()
-    lazy var mapView = GMSMapView()
-    
-    var MQTTManager = MQTT_Manager()
-    
+   
     // MARK: - Variables
+    
+    var locationManager = CLLocationManager()
+    let path = GMSMutablePath()
+    lazy var mapView = GMSMapView()
+    var MQTTManager = MQTT_Manager()
     
     fileprivate var startCoordinate: CLLocationCoordinate2D?
     fileprivate var endCoordinate: CLLocationCoordinate2D?
@@ -148,8 +150,6 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
     //    }
 }
 
-
-
 extension FindRouteViewController: GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) { }
 }
@@ -164,7 +164,15 @@ extension FindRouteViewController: CLLocationManagerDelegate {
         mapView.isMyLocationEnabled = true
         self.view = mapView
         
-        locationManager.stopUpdatingLocation()
+
+        path.add(CLLocationCoordinate2D(latitude: userLocation!.coordinate.latitude,
+                                        longitude: userLocation!.coordinate.longitude))
+        
+        let polyline = GMSPolyline(path: path)
+        polyline.
+        
+        polyline.map = mapView
+//        locationManager.stopUpdatingLocation()
     }
 }
 
