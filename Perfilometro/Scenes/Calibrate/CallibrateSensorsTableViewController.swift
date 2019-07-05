@@ -12,6 +12,7 @@ class CallibrateSensorsTableViewController: UITableViewController {
     
     // MARK: - Outlets
     
+    @IBOutlet weak var calibrateBtn: UIButton!
     @IBOutlet weak var sensorStateSwitch: UISwitch!
     @IBOutlet weak var connectToRaspberry: UISwitch!
     
@@ -28,9 +29,9 @@ class CallibrateSensorsTableViewController: UITableViewController {
     }
     
     @IBAction func changeSensorState(_ sender: Any) {
-        if sensorStateSwitch.isOn {
+        if self.mQTTManager != nil {
            self.mQTTManager?.calibrateSensors()
-        } else {
+        
            
         }
     }
