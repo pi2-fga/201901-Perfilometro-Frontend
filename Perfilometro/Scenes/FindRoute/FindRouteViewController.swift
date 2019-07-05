@@ -164,14 +164,6 @@ extension FindRouteViewController: CLLocationManagerDelegate {
         mapView.isMyLocationEnabled = true
         self.view = mapView
         
-
-        path.add(CLLocationCoordinate2D(latitude: userLocation!.coordinate.latitude,
-                                        longitude: userLocation!.coordinate.longitude))
-        
-        let polyline = GMSPolyline(path: path)
-        polyline.
-        
-        polyline.map = mapView
 //        locationManager.stopUpdatingLocation()
     }
 }
