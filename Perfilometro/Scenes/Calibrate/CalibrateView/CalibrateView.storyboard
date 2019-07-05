@@ -51,32 +51,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="67"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Lnb-WZ-c0p">
-                                                    <rect key="frame" x="313" y="10" width="49" height="47"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="47" id="6FZ-k6-CII"/>
-                                                    </constraints>
-                                                    <color key="tintColor" name="whiteSmoke"/>
-                                                    <color key="onTintColor" name="darkPink"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                            <color key="value" name="darkPink"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="startRadius">
-                                                            <real key="value" value="50"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
-                                                            <real key="value" value="0.0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="showBorder" value="NO"/>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                            <color key="value" name="whiteSmoke"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                    <connections>
-                                                        <action selector="changeSensorState:" destination="X9L-ht-zDi" eventType="valueChanged" id="r3j-cP-cBi"/>
-                                                    </connections>
-                                                </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INICIAR CALIBRAÇÃO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ip8-aV-iiP">
                                                     <rect key="frame" x="20" y="10" width="150" height="47"/>
                                                     <constraints>
@@ -86,16 +60,24 @@
                                                     <color key="textColor" name="mediumGray"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJG-F4-cuy">
+                                                    <rect key="frame" x="269" y="18" width="94" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Calibrar">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="changeSensorState:" destination="X9L-ht-zDi" eventType="touchUpInside" id="U2w-Tt-KsD"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Lnb-WZ-c0p" firstAttribute="top" secondItem="Mjm-Yw-rqC" secondAttribute="top" constant="10" id="0qi-Ju-b0E"/>
                                                 <constraint firstAttribute="bottom" secondItem="ip8-aV-iiP" secondAttribute="bottom" constant="10" id="1DK-yw-vpM"/>
-                                                <constraint firstAttribute="bottom" secondItem="Lnb-WZ-c0p" secondAttribute="bottom" constant="10" id="4RD-1h-oz7"/>
-                                                <constraint firstAttribute="trailing" secondItem="Lnb-WZ-c0p" secondAttribute="trailing" constant="15" id="DPz-BH-w8u"/>
                                                 <constraint firstItem="ip8-aV-iiP" firstAttribute="leading" secondItem="Mjm-Yw-rqC" secondAttribute="leading" constant="20" id="RrI-2J-OGW"/>
                                                 <constraint firstItem="ip8-aV-iiP" firstAttribute="top" secondItem="Mjm-Yw-rqC" secondAttribute="top" constant="10" id="THZ-Kv-4vz"/>
-                                                <constraint firstItem="Lnb-WZ-c0p" firstAttribute="top" secondItem="Mjm-Yw-rqC" secondAttribute="top" constant="10" id="ZeH-z8-FPf"/>
-                                                <constraint firstAttribute="bottom" secondItem="Lnb-WZ-c0p" secondAttribute="bottom" constant="10" id="aZm-sW-5id"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -130,7 +112,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EvW-wo-IzE">
-                                                    <rect key="frame" x="313" y="10" width="49" height="46.5"/>
+                                                    <rect key="frame" x="313" y="10" width="49" height="47"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="47" id="re8-AJ-dJ6"/>
                                                     </constraints>
@@ -151,9 +133,12 @@
                                                             <color key="value" name="whiteSmoke"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="connectToRaspberryPi:" destination="X9L-ht-zDi" eventType="valueChanged" id="PqH-ZM-ul3"/>
+                                                    </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONECTAR RASPBERRY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTG-uX-gm9">
-                                                    <rect key="frame" x="20" y="10" width="180" height="46.5"/>
+                                                    <rect key="frame" x="20" y="10" width="180" height="47"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="180" id="XPP-3l-R5K"/>
                                                     </constraints>
@@ -188,7 +173,8 @@
                     <navigationItem key="navigationItem" title="SENSORES" id="xXt-pS-YQw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <connections>
-                        <outlet property="sensorStateSwitch" destination="Lnb-WZ-c0p" id="VK9-ws-wsO"/>
+                        <outlet property="calibrateBtn" destination="rJG-F4-cuy" id="GPw-Ya-eg9"/>
+                        <outlet property="connectToRaspberry" destination="EvW-wo-IzE" id="hg4-ZF-Hbi"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghs-ux-aTB" userLabel="First Responder" sceneMemberID="firstResponder"/>

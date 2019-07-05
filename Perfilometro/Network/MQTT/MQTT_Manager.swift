@@ -34,6 +34,14 @@ class MQTT_Manager {
     func calibrateSensors() {
         mqttClient?.publish("sensors", withString: "calibrate")
     }
+    
+    func connectToRaspberry() {
+        mqttClient?.connect()
+    }
+    
+    func disconnectToRaspberry() {
+        mqttClient?.disconnect()
+    }
 }
 
 extension MQTT_Manager: CocoaMQTTDelegate {
