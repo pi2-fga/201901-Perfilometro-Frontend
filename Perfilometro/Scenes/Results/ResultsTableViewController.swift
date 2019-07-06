@@ -33,7 +33,6 @@ class ResultsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ResultsTableViewCell
-        cell.setRoadName(name: roads[indexPath.row])
     
         return cell
     }

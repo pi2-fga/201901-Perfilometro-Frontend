@@ -11,6 +11,7 @@ target 'Perfilometro' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'CocoaMQTT'
+  pod 'SwiftyJSON', '~> 4.0'
 
   target 'PerfilometroTests' do
     inherit! :search_paths

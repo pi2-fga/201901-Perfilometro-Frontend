@@ -62,6 +62,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="dateLabel" destination="7Iz-Te-TmJ" id="XOS-C2-eze"/>
                 <outlet property="roadName" destination="fGo-FG-hcs" id="PHg-DU-a6p"/>
                 <outlet property="tracedRoute" destination="GcK-0f-Clq" id="la4-iZ-ZUU"/>
             </connections>

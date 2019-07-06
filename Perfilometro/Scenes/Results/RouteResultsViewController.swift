@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 import Alamofire
 
 protocol RouteResultsDisplayLogic: class {
@@ -28,6 +29,10 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
         super.init(coder: aDecoder)
         setup()
     }
+    
+    // MARK: - Variable
+    
+    var roads = [Road]()
 
     // MARK: Setup
 
@@ -47,75 +52,34 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
     // MARK: View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.doSomething()
+//        self.doSomething()
         setNibUp()
-        self.roads?.append(Road(identifier: "00", date: "0000", name: "000000", lazers: [[[0][1]]]))
+        getRoads()
     }
 
     // MARK: Do something
-
-    //@IBOutlet weak var nameTextField: UITextField!
-
-//    func fetchAllRooms(completion: @escaping ([Road]?) -> Void) {
-//        guard let url = URL(string: "https://perfilometer-node.herokuapp.com/api/roads") else {
-//        completion(nil)
-//        return
-//        }
-//        AF.request(url, method: .get, parameters: nil, headers: ["api-version" : "0.1.0"], interceptor: nil).responseJSON(completionHandler: { (response) in
-//            switch response.result {
-//            case .success(let result):
-//                print("restul: ", result)
-//                completion(nil)
-//
-//
-//                if let resulted =  try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {//result as? [String: Any] {
-//
-//                    if let data = resulted["data"] as? NSArray {
-//                        let roads = data?["roads"]
-//                    }
-//
-//
-//                    for road in roads {
-//                        if let routeDict = route as? NSDictionary {
-//
-//
-//                        }
-//                    }
-//
-//
-//
-//                    for route in routes {
-//                        if let routeDict = route as? NSDictionary {
-//                            let polyline = routeDict["overview_polyline"] as! NSDictionary
-//
-//
-//                        }
-//
-//                    }
-//                }
-//
-//
-//                break
-//            case .failure(let error):
-//                print(error)
-//                completion(nil)
-//                break
-//            }
-//        })
-//    }
     
-//        guard let value = response.result.value as? [String: Any],
-//        let rows = value["rows"] as? [[String: Any]] else {
-//        print("Malformed data received from fetchAllRooms service")
-//        completion(nil)
-//        return
-//        }
-//
-//        let rooms = rows.flatMap { roomDict in return RemoteRoom(jsonData: roomDict) }
-//        completion(rooms)
-//        }
-//        }
-    
+    private func getRoads() {
+        NetworkManager.shared.request(endpoint: RoadEnpoint.getRoads) { response in
+            switch response.result {
+            case .success(let data):
+                let json = JSON(data)
+                let content = json["data"]
+                for item in content["roads"].arrayValue {
+                    let road = Road(from: item)
+                    self.roads.append(road)
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                }
+                
+            case .failure(let error):
+                print(error)
+            }
+
+        }
+    }
+
     func doSomething() {
 //        self.fetchAllRooms { (roads) in
 //            print("roads", roads)
@@ -128,22 +92,16 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
         //nameTextField.text = viewModel.name
     }
     
-    var roads: [Road]?
+//    var roads: [Road]?
     
     var road: Road?
     let segueId = "result"
     
     // MARK: - Table view data source
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return 1
-    }
+    override func numberOfSections(in tableView: UITableView) -> Int { return 1 }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return roads!.count
-    }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return roads.count }
     
     private func setNibUp() {
         let agencyNib = UINib.init(nibName: "ResultTableViewCell", bundle: nil)
@@ -152,8 +110,7 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ResultsTableViewCell
-        cell.setRoadName(name: roads?[indexPath.row].name ?? "")
-        
+        cell.setup(road: roads[indexPath.row])
         
         return cell
     }
@@ -166,9 +123,7 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.road = self.roads?[indexPath.row]
         performSegue(withIdentifier: segueId, sender: nil)
-        
     }
 
 }
