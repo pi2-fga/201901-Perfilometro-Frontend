@@ -66,6 +66,20 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
                 let json = JSON(data)
                 let content = json["data"]
                 for item in content["roads"].arrayValue {
+//                    let name = item["name"]
+//                    let date = item["date"]
+//                    let lazers:[[Int]] = item["lasers"].rawValue as! [[Int]]
+//                    var coordinates_location: [Location] = [Location]()
+//
+//                    for location in item["locations"].rawValue as! NSArray {
+//                        let coordinates_raw = location as? NSDictionary
+//                        let latitude = coordinates_raw?["latitude"] as! Double
+//                        let longitude = coordinates_raw?["longitude"] as! Double
+//
+//                        let coordenates = Location(latitude: latitude, longitude: longitude)
+//                        coordinates_location.append(coordenates)
+//                    }
+                    
                     let road = Road(from: item)
                     self.roads.append(road)
                     DispatchQueue.main.async {
