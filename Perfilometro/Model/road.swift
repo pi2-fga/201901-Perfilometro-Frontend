@@ -15,10 +15,10 @@ class Road {
 //    var identifier: String
     var date: String
     var name: String
-    var lazers: [[Int]]
+    var lazers: [[Float]]
     var locations: [Location]//Location
     
-    init(name: String, date: String, lazers: [[Int]], locations: [Location]) {
+    init(name: String, date: String, lazers: [[Float]], locations: [Location]) {
 //        self.identifier = identifier
         self.date = date
         self.name = name
@@ -37,7 +37,7 @@ class Road {
 //            self.locations = location
         let name = item["name"].string
         let date = item["date"].string
-        let lazers:[[Int]] = item["lasers"].rawValue as! [[Int]]
+        let lazers:[[Float]] = item["lasers"].rawValue as! [[Float]]
         var coordinates_location: [Location] = [Location]()
         
         for location in item["locations"].rawValue as! NSArray {

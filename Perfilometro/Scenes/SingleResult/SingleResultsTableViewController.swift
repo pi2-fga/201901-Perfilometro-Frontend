@@ -22,9 +22,9 @@ class SingleResultsTableViewController: UITableViewController, SCNSceneRendererD
     //    private var scnView: SCNView?
     private var object3D: SCNNode?
     private var chartNode:SCNNode!
-    var roadname: Road?
+    var road: Road?
     
-    let data = ExampleData()
+    let data = GraphicSettings()
     private var initialBlockPosition: SCNVector3 = SCNVector3(-2.0, 0.0, 0.0)
     private let defaultBlockDimension: CGFloat = 1.0
     private var blockDistances: [Float] = [0.5, 0.7, 0.4, 0.7, 1.0, 0.3, 1.5, 1.5, 1.5, 1.6, 1.7, 2.0, 2.0, 2.0, 0.7, 0.8, 0.9, 0.6, 0.6, 0.6, 0.6, 0.5]
@@ -38,9 +38,9 @@ class SingleResultsTableViewController: UITableViewController, SCNSceneRendererD
         setUpOmniLight()
         setupAmbientLight()
         addCamera(scene: self.objectScene!)
+        setSensorsValue(road: road!)
         setupOverlay()
         showData()
-        
         setupLayout()
     }
     
@@ -63,6 +63,23 @@ class SingleResultsTableViewController: UITableViewController, SCNSceneRendererD
     fileprivate func setupScene() {
         self.objectScene = SCNScene()
         self.graph?.scene = self.objectScene
+    }
+    
+    func setSensorsValue(road: Road) {
+        if road != nil {
+            data.sensor1Values = road.lazers[0]
+            data.sensor2Values = road.lazers[1]
+            data.sensor3Values = road.lazers[2]
+            data.sensor4Values = road.lazers[3]
+            data.sensor5Values = road.lazers[4]
+            
+            //            data.sensor6Values = road.lazers[5]
+            //            data.sensor7Values = road.lazers[6]
+            //            data.sensor8Values = road.lazers[7]
+            //            data.sensor9Values = road.lazers[8]
+            //            data.sensor10Values = road.lazers[9]
+        }
+        
     }
     
     fileprivate func setupOverlay() {

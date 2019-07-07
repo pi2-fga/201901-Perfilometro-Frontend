@@ -12,7 +12,7 @@ class ResultsTableViewController: UITableViewController {
 
     let roads: [String] = ["EPIA", "EPGU" , "Eixão Norte", "EPP", "EPTG", "Eixo W"]
     
-    var road: String?
+    var road: Road?
     let segueId = "result"
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,14 +40,14 @@ class ResultsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueId {
             let singleResultView: SingleResultViewController = segue.destination as! SingleResultViewController
-            singleResultView.roadname = self.road
+            singleResultView.road = self.road
         }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.road = self.roads[indexPath.row]
-        performSegue(withIdentifier: segueId, sender: nil)
+//        self.road = self.roads[indexPath.row]
+//        performSegue(withIdentifier: segueId, sender: nil)
         
     }
 
