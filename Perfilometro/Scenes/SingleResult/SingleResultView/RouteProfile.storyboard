@@ -113,27 +113,27 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="290" id="Rzc-3n-fzt">
-                                        <rect key="frame" x="0.0" y="35" width="375" height="290"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="182" id="Rzc-3n-fzt">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="182"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rzc-3n-fzt" id="U1O-04-vnH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eIF-RK-o0I">
-                                                    <rect key="frame" x="15" y="10" width="345" height="270"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="182"/>
                                                 </mapView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="eIF-RK-o0I" firstAttribute="top" secondItem="U1O-04-vnH" secondAttribute="top" constant="10" id="D6y-9U-yqf"/>
-                                                <constraint firstAttribute="bottom" secondItem="eIF-RK-o0I" secondAttribute="bottom" constant="10" id="arp-H6-TEh"/>
-                                                <constraint firstAttribute="trailing" secondItem="eIF-RK-o0I" secondAttribute="trailing" constant="15" id="tPi-zT-UDe"/>
-                                                <constraint firstItem="eIF-RK-o0I" firstAttribute="leading" secondItem="U1O-04-vnH" secondAttribute="leading" constant="15" id="w4Q-Ok-fNR"/>
+                                                <constraint firstItem="eIF-RK-o0I" firstAttribute="top" secondItem="U1O-04-vnH" secondAttribute="top" id="D6y-9U-yqf"/>
+                                                <constraint firstAttribute="bottom" secondItem="eIF-RK-o0I" secondAttribute="bottom" id="arp-H6-TEh"/>
+                                                <constraint firstAttribute="trailing" secondItem="eIF-RK-o0I" secondAttribute="trailing" id="tPi-zT-UDe"/>
+                                                <constraint firstItem="eIF-RK-o0I" firstAttribute="leading" secondItem="U1O-04-vnH" secondAttribute="leading" id="w4Q-Ok-fNR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="35" id="kqh-DZ-9SN" userLabel="Header Chart 3D">
-                                        <rect key="frame" x="0.0" y="325" width="375" height="35"/>
+                                        <rect key="frame" x="0.0" y="217" width="375" height="35"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kqh-DZ-9SN" id="akC-Wx-ko1">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
@@ -156,26 +156,26 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="320" id="L7w-tC-d3Y">
-                                        <rect key="frame" x="0.0" y="360" width="375" height="320"/>
+                                        <rect key="frame" x="0.0" y="252" width="375" height="320"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L7w-tC-d3Y" id="rnf-DD-tUO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PHN-fU-tjg">
-                                                    <rect key="frame" x="15" y="10" width="345" height="300"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="310"/>
                                                 </sceneKitView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="PHN-fU-tjg" firstAttribute="top" secondItem="rnf-DD-tUO" secondAttribute="top" constant="10" id="8aZ-gj-nvF"/>
-                                                <constraint firstItem="PHN-fU-tjg" firstAttribute="leading" secondItem="rnf-DD-tUO" secondAttribute="leading" constant="15" id="cQH-rI-W8y"/>
+                                                <constraint firstItem="PHN-fU-tjg" firstAttribute="top" secondItem="rnf-DD-tUO" secondAttribute="top" id="8aZ-gj-nvF"/>
+                                                <constraint firstItem="PHN-fU-tjg" firstAttribute="leading" secondItem="rnf-DD-tUO" secondAttribute="leading" id="cQH-rI-W8y"/>
                                                 <constraint firstAttribute="bottom" secondItem="PHN-fU-tjg" secondAttribute="bottom" constant="10" id="lWs-rV-N2o"/>
-                                                <constraint firstAttribute="trailing" secondItem="PHN-fU-tjg" secondAttribute="trailing" constant="15" id="zJt-kd-A4N"/>
+                                                <constraint firstAttribute="trailing" secondItem="PHN-fU-tjg" secondAttribute="trailing" id="zJt-kd-A4N"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IBB-ds-U1f">
-                                        <rect key="frame" x="0.0" y="680" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="572" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IBB-ds-U1f" id="a3t-B3-xEx">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
