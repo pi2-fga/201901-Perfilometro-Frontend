@@ -64,7 +64,7 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
     }
 
     func setSensorsValue(road: Road) {
-//        if road != nil {
+        if road != nil {
             data.sensor1Values = road.lasers[0]
             data.sensor2Values = road.lasers[1]
             data.sensor3Values = road.lasers[2]
@@ -76,7 +76,7 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
 //            data.sensor8Values = road.lazers[7]
 //            data.sensor9Values = road.lazers[8]
 //            data.sensor10Values = road.lazers[9]
-//        }
+        }
 
     }
     fileprivate func setupView() {

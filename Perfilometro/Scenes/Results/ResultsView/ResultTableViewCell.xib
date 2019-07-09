@@ -21,8 +21,6 @@
                     <rect key="frame" x="20" y="25" width="100" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="Jbc-id-CAD"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="eYD-a1-Vur"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="oaE-4H-jEm"/>
                         <constraint firstAttribute="width" constant="100" id="wdt-FY-LNE"/>
                     </constraints>
                 </mapView>

@@ -25,7 +25,6 @@ class GraphicSettings {
     var sensor10Values:[Float] = [1.21, 4.35, 7.43, 4.32, 23.22]//[58.3, 87.37, 29.19, 16.84, 49.79, 64.28, 71.12, 80.42, 98.44, 32.48, 49.94, 23.72]
     
     func updateValues() {
-        
         sensorValues.append(sensor1Values)
         sensorValues.append(sensor2Values)
         sensorValues.append(sensor3Values)
@@ -97,15 +96,15 @@ class GraphicSettings {
     }
     
     func colorForIndexPath(row:Int, column:Int) -> SKColor {
-        let val:Float = self.valueForIndexPath(row:row, column:column)
-        let max:Float = 150.0
-        let value:Float = Float(val/max)
+        let val: Float = self.valueForIndexPath(row:row, column:column)
+        let max: Float = 150.0
+        let value: Float = Float(val/max)
         let hue = 0.3 + Float(row) / 6.0
         let sat = 0.2 + value/1.25
         
         let color = UIColor(hue: CGFloat(hue), saturation: CGFloat(sat), brightness: 1.0, alpha: 1.0)
-        return color;
         
+        return color
     }
 }
 
