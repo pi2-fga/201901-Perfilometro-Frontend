@@ -26,11 +26,13 @@ class MQTT_Manager {
     }
     
     func turnSensorsOn () {
-        mqttClient?.publish("sensors", withString: "on")
+//        mqttClient?.publish("sensors", withString: "on")
+        mqttClient?.publish("sensors", withString: "on", qos: CocoaMQTTQOS(rawValue: 0)!, retained: true, dup: true)
     }
     
     func turnSensorsOff () {
         mqttClient?.publish("sensors", withString: "off")
+        mqttClient?.publish("sensors", withString: "off", qos: CocoaMQTTQOS(rawValue: 0)!, retained: true, dup: true)
     }
     
     func calibrateSensors() {
