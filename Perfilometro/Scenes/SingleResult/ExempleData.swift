@@ -49,29 +49,29 @@ class ExampleData {
         return self.sensor1Values.count
     }
     
-    func legendForRow(_ row:Int) -> String {
-        if (row == 0) {
+    func legendForRow(_ row: Int) -> String {
+        switch row  {
+        case 0:
             return "Sensor 1"
-        }else if (row == 1) {
+        case 1:
             return "Sensor 2"
-        }else if (row == 2) {
+        case 2:
             return "Sensor 3"
-        } else if (row == 3) {
+        case 3:
             return "Sensor 4"
-        } else if (row == 4) {
+        case 4:
             return "Sensor 5"
-        } else if (row == 5) {
+        case 5:
             return "Sensor 6"
-        } else if (row == 6) {
+        case 6:
             return "Sensor 7"
-        } else if (row == 7) {
+        case 7:
             return "Sensor 8"
-        } else if (row == 8) {
+        case 8:
             return "Sensor 9"
-        } else if (row == 9) {
+        case 9:
             return "Sensor 10"
-        }
-        else {
+        default:
             return "Sensors out of range 0-9 "
         }
     }

@@ -13,17 +13,22 @@ import MapKit
 
 class SingleResultsTableViewController: UITableViewController, SCNSceneRendererDelegate {
     
+    // MARK: Chart
+    
+    var road: Road?
+    
+    // MARK: SceneKit Chart
+    
     @IBOutlet weak var routeInMap: MKMapView!
     @IBOutlet weak var graph: SCNView!
     
     private var objectScene: SCNScene?
     private var cameraNode: SCNNode?
     private var overlay: CameraControll?
-    //    private var scnView: SCNView?
+ 
     private var object3D: SCNNode?
     private var chartNode:SCNNode!
-    var roadname: String?
-    
+
     let data = ExampleData()
     private var initialBlockPosition: SCNVector3 = SCNVector3(-2.0, 0.0, 0.0)
     private let defaultBlockDimension: CGFloat = 1.0
@@ -153,11 +158,6 @@ class SingleResultsTableViewController: UITableViewController, SCNSceneRendererD
         return node
     }
     
-    private func setupLayout() {
-        self.routeInMap.layer.cornerRadius = 10
-        self.graph.layer.cornerRadius = 10
-    }
-
 }
 
 extension SingleResultsTableViewController: MoveCameraDelegate {
@@ -171,5 +171,16 @@ extension SingleResultsTableViewController: MoveCameraDelegate {
     func moveCameraBackward() {
         let mvAction = SCNAction.move(by: SCNVector3(x: 10.0, y: 0, z: 0), duration: 0.5)
         self.chartNode.runAction(mvAction)
+    }
+}
+
+extension SingleResultsTableViewController {
+    
+    fileprivate func setupLayout() {
+        self.routeInMap.layer.cornerRadius = 10
+        self.graph.layer.cornerRadius = 10
+        if let content = road {
+            self.navigationItem.title = content.name
+        }
     }
 }

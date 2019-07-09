@@ -8,20 +8,34 @@
 
 import UIKit
 import MapKit
+
 class ResultsTableViewCell: UITableViewCell {
     
     // MARK :- Outlet
     
     @IBOutlet weak var roadName: UILabel!
     @IBOutlet weak var tracedRoute: MKMapView!
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    // MARK: - Variables
     
     var mapDeparture: String = "" {
         didSet {
              self.roadName.text = mapDeparture
         }
     }
-
-
+    
+    var name: String = "" {
+        didSet {
+            roadName.text = name
+        }
+    }
+    
+    var date: String = "" {
+        didSet {
+            self.dateLabel.text = date
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,12 +48,26 @@ class ResultsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setRoadName(name: String) {
-        self.roadName.text = name
+    public func setup(road: Road) {
+        self.name = road.name
+        if let formattedDate = setFormattedDate(date: road.date) {
+            self.date = formattedDate.asString(style: .long)
+        }
     }
-    
+   
     private func setupLayout() {
         self.tracedRoute.layer.cornerRadius = 10
     }
+    
 
+    private func setFormattedDate(date: String) -> Date? {
+        let formatter = ISO8601DateFormatter()
+        formatter.formatOptions = [.withFullDate,
+                                   .withTime,
+                                   .withDashSeparatorInDate,
+                                   .withColonSeparatorInTime]
+        
+        return formatter.date(from: date)
+    }
+    
 }

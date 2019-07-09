@@ -26,7 +26,7 @@ protocol Endpoint {
 extension Endpoint {
     
     var baseURL: String {
-        return "https://gateway.marvel.com"
+        return "https://perfilometer-node.herokuapp.com/"
     }
     
     var encoding: ParameterEncoding {
@@ -38,7 +38,8 @@ extension Endpoint {
     }
     
     var headers: HTTPHeaders {
-        return [ "Content-Type": EndPointHeaders.contentType.rawValue]
+        return [ "Content-Type": EndPointHeaders.contentType.rawValue,
+                 "api-version": "0.1.0" ]
     }
     
     var body: Parameters {

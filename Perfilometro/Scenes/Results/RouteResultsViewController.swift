@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
 
 protocol RouteResultsDisplayLogic: class {
   func displaySomething(viewModel: RouteResults.Something.ViewModel)
@@ -27,6 +29,12 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
         super.init(coder: aDecoder)
         setup()
     }
+    
+    // MARK:  Variable
+    
+    var roads = [Road]()
+    var road: Road?
+    let segueId = "result"
 
     // MARK: Setup
 
@@ -42,54 +50,42 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
         router.viewController = viewController
         router.dataStore = interactor
     }
-
-    // MARK: Routing
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let scene = segue.identifier {
-//            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-//            if let router = router, router.responds(to: selector) {
-//                router.perform(selector, with: segue)
-//            }
-//        }
-//    }
-
+    
     // MARK: View lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        doSomething()
         setNibUp()
+        getRoads()
     }
 
     // MARK: Do something
-
-    //@IBOutlet weak var nameTextField: UITextField!
-
-    func doSomething() {
-        let request = RouteResults.Something.Request()
-        interactor?.doSomething(request: request)
+    
+    private func getRoads() {
+        NetworkManager.shared.request(endpoint: RoadEnpoint.getRoads) { response in
+            switch response.result {
+            case .success(let data):
+                let json = JSON(data)
+                let content = json["data"]
+                print(content)
+                for item in content["roads"].arrayValue {
+                    let roadLocations = JSONFormatter.setLocationsJSON(json: item)
+                    let lasersValues = JSONFormatter.setSensorsJSON(json: item)
+                    let road = Road(with: item, locations: roadLocations, lasers: lasersValues)
+                    self.roads.append(road)
+                }
+                DispatchQueue.main.async { self.tableView.reloadData() }
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
+
+    func doSomething() { }
 
     func displaySomething(viewModel: RouteResults.Something.ViewModel) {
         //nameTextField.text = viewModel.name
-    }
-    
-    let roads: [String] = ["EPIA", "EPGU"]
-    
-    var road: String?
-    let segueId = "result"
-    
-    // MARK: - Table view data source
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return roads.count
     }
     
     private func setNibUp() {
@@ -97,25 +93,32 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
         self.tableView.register(agencyNib, forCellReuseIdentifier: "cell")
     }
     
+    // MARK: Table View
+    
+    override func numberOfSections(in tableView: UITableView) -> Int { return 1 }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { return roads.count }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ResultsTableViewCell
-        cell.setRoadName(name: roads[indexPath.row])
-        
+        cell.setup(road: roads[indexPath.row])
         
         return cell
     }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        road = roads[indexPath.row]
+        performSegue(withIdentifier: segueId, sender: nil)
+    }
+    
+    // MARK: Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueId {
-//            let singleResultView: SingleResultsTableViewController = segue.destination as! SingleResultsTableViewController
-//            singleResultView.roadname = self.road
+            let singleResultView: SingleResultsTableViewController = segue.destination as! SingleResultsTableViewController
+            singleResultView.road = self.road
         }
     }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        self.road = self.roads[indexPath.row]
-        performSegue(withIdentifier: segueId, sender: nil)
-        
-    }
-
+    
 }

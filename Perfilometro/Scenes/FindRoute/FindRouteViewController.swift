@@ -93,7 +93,7 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
         interactor?.doSomething(request: request)
     }
     @IBAction func controlStateData(_ sender: Any) {
-        let alert = UIAlertController(title: "My Alert", message: "This is an alert.", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "Atividade", message: "Opções para habilitar o Perfilometro", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: NSLocalizedString("Começar", comment: "Default action"), style: .default, handler: { _ in
             self.MQTTManager.turnSensorsOn()

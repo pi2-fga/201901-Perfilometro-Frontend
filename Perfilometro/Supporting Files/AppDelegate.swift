@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        setupAppCredentials()
+        self.setupAppCredentials()
+        self.setGlobalLayoutPreferences()
     
         return true
     }
@@ -49,6 +50,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setupAppCredentials() {
         let key = "AIzaSyC61BOCuk39JwgXMnmPNRYrI_rM7P79ozk"
         GMSServices.provideAPIKey(key)
+    }
+    
+    private func setGlobalLayoutPreferences() {
+        let primaryBlue = UIColor(named: "primaryBlue")
+        UIView.appearance(whenContainedInInstancesOf: [UIAlertController.self]).tintColor = primaryBlue
     }
 }
 
