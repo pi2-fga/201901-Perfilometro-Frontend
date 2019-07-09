@@ -16,23 +16,23 @@ class CallibrateSensorsTableViewController: UITableViewController {
     @IBOutlet weak var connectToRaspberry: UISwitch!
     
     // MARK: - Variables
-
-    var mQTTManager: MQTT_Manager?
+    
+    var sensors: [UITableViewCell] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.mQTTManager = MQTT_Manager()
     }
     
     @IBAction func changeSensorState(_ sender: Any) {
-        self.calibrateSensors()
+        
+        MQTT_Manager.sharedInstance.calibrateSensors()
     }
     
     @IBAction func connectToRaspberryPi(_ sender: Any) {
         if connectToRaspberry.isOn {
-            self.mQTTManager?.connectToRaspberry()
+            MQTT_Manager.sharedInstance.connectToRaspberry()
         } else {
-            self.mQTTManager?.disconnectToRaspberry()
+            MQTT_Manager.sharedInstance.disconnectToRaspberry()
         }
     }
     
@@ -44,16 +44,10 @@ class CallibrateSensorsTableViewController: UITableViewController {
                 
             }))
             alert.addAction(UIAlertAction(title: NSLocalizedString("Cofirmar", comment: "Default action"), style: .default, handler: { _ in
-                self.calibrateSensors()
+                MQTT_Manager.sharedInstance.calibrateSensors()
             }))
             
             self.present(alert, animated: true, completion: nil)
-        }
-    }
-    
-    private func calibrateSensors() {
-        if self.mQTTManager != nil {
-            self.mQTTManager?.calibrateSensors()
         }
     }
 }

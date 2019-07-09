@@ -16,7 +16,9 @@ class MQTT_Manager {
     let mqttPort: UInt16 = 13504
     let clientID = "iOS App Device"
 
-    init() {
+    static let sharedInstance =  MQTT_Manager()
+    
+    private init() {
         mqttClient = CocoaMQTT(clientID: clientID, host:  mqttServerIP, port: mqttPort)
         mqttClient?.username = "ioqvlgfd"//"iOSApp"
         mqttClient?.password = "xL0pD1ldNz9u"//"iOSApp"
@@ -32,7 +34,7 @@ class MQTT_Manager {
     }
     
     func calibrateSensors() {
-        mqttClient?.publish("sensors", withString: "calibrate")
+        mqttClient?.publish("sensors", withString: "calib")
     }
     
     func connectToRaspberry() {
@@ -43,7 +45,6 @@ class MQTT_Manager {
         mqttClient?.disconnect()
     }
 }
-
 extension MQTT_Manager: CocoaMQTTDelegate {
     func mqtt(_ mqtt: CocoaMQTT, didSubscribeTopic topics: [String]) {
     

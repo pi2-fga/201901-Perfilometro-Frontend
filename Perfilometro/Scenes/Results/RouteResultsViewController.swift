@@ -120,5 +120,4 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
             singleResultView.road = self.road
         }
     }
-    
 }

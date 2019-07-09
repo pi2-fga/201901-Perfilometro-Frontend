@@ -28,9 +28,9 @@ class JSONFormatter {
         return coordinates
     }
     
-    public static func setSensorsJSON(json: JSON) -> [[Int]] {
+    public static func setSensorsJSON(json: JSON) -> [[Float]] {
 //        var matrix = [[Int]](x)
-        let content = json["lasers"].arrayObject as? [[Int]]
+        let content = json["lasers"].arrayObject as? [[Float]]
         
         if let content = content {
             return content

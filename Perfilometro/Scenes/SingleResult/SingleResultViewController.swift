@@ -27,9 +27,9 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
 //    private var scnView: SCNView?
     private var object3D: SCNNode?
     private var chartNode:SCNNode!
-    var roadname: String?
+    var road: Road?
     
-    let data = ExampleData()
+    let data = GraphicSettings()
     private var initialBlockPosition: SCNVector3 = SCNVector3(-2.0, 0.0, 0.0)
     private let defaultBlockDimension: CGFloat = 1.0
     private var blockDistances: [Float] = [0.5, 0.7, 0.4, 0.7, 1.0, 0.3, 1.5,1.5,1.5,1.6,1.7, 2.0, 2.0, 2.0, 0.7, 0.8, 0.9, 0.6, 0.6, 0.6, 0.6, 0.5]
@@ -37,7 +37,7 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        routeName.text = roadname
+        routeName.text = road?.name
         setupView()
         setupScene()
         setUpOmniLight()
@@ -45,6 +45,7 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
         addCamera(scene: self.objectScene!)
         setupOverlay()
         showData()
+        setSensorsValue(road: road!)
         
     }
 
@@ -62,6 +63,22 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
         super.init(nibName: nil, bundle: nil)
     }
 
+    func setSensorsValue(road: Road) {
+//        if road != nil {
+            data.sensor1Values = road.lasers[0]
+            data.sensor2Values = road.lasers[1]
+            data.sensor3Values = road.lasers[2]
+            data.sensor4Values = road.lasers[3]
+            data.sensor5Values = road.lasers[4]
+            
+//            data.sensor6Values = road.lazers[5]
+//            data.sensor7Values = road.lazers[6]
+//            data.sensor8Values = road.lazers[7]
+//            data.sensor9Values = road.lazers[8]
+//            data.sensor10Values = road.lazers[9]
+//        }
+
+    }
     fileprivate func setupView() {
         self.graph?.delegate = self
         graph?.backgroundColor = UIColor.black

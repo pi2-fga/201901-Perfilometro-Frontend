@@ -29,7 +29,8 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
     var locationManager = CLLocationManager()
     let path = GMSMutablePath()
     lazy var mapView = GMSMapView()
-    var MQTTManager = MQTT_Manager()
+    
+    var MQTTManager: MQTT_Manager?
     
     fileprivate var startCoordinate: CLLocationCoordinate2D?
     fileprivate var endCoordinate: CLLocationCoordinate2D?
@@ -84,6 +85,7 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
         
         setupLocationManager()
         setupMapView()
+        
     }
     
     // MARK: Do something
@@ -96,10 +98,11 @@ class FindRouteViewController: UIViewController, FindRouteDisplayLogic {
         let alert = UIAlertController(title: "Atividade", message: "Opções para habilitar o Perfilometro", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: NSLocalizedString("Começar", comment: "Default action"), style: .default, handler: { _ in
-            self.MQTTManager.turnSensorsOn()
+            MQTT_Manager.sharedInstance.turnSensorsOn()
+        
         }))
         alert.addAction(UIAlertAction(title: NSLocalizedString("Parar", comment: "Default action"), style: .default, handler: { _ in
-             self.MQTTManager.turnSensorsOff()
+            MQTT_Manager.sharedInstance.turnSensorsOff()
         }))
         alert.addAction(UIAlertAction(title: NSLocalizedString("Cancelar", comment: "Default action"), style: .cancel, handler: { _ in
             
