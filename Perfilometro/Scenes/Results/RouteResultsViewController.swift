@@ -67,7 +67,6 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
             case .success(let data):
                 let json = JSON(data)
                 let content = json["data"]
-                print(content)
                 for item in content["roads"].arrayValue {
                     let roadLocations = JSONFormatter.setLocationsJSON(json: item)
                     let lasersValues = JSONFormatter.setSensorsJSON(json: item)

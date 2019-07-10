@@ -134,6 +134,4 @@ class ResultsTableViewCell: UITableViewCell, MKMapViewDelegate {
         
         return renderer
     }
-
-    
 }
