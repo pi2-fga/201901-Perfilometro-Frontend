@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		25AD9217A5F8BAEFEF6EEEC2 /* Pods_Perfilometro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4FA9A78269D87623B1B9F8 /* Pods_Perfilometro.framework */; };
-		2B42F3571C0280B68CD2011A /* Pods_PerfilometroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FB17EEA8A68F253B9F6729 /* Pods_PerfilometroTests.framework */; };
 		AD36DD2622C8EAAA00374DCB /* SingleResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36DD2522C8EAAA00374DCB /* SingleResultsTableViewController.swift */; };
 		AD36DD2822C93EB700374DCB /* AnimatedSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD36DD2722C93EB700374DCB /* AnimatedSwitch.swift */; };
+		AD3970E4E584F1B9EA963A9D /* Pods_Perfilometro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2204A42C5DA521E6AB589A47 /* Pods_Perfilometro.framework */; };
 		AD750BA9226FEF8000140400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BA8226FEF8000140400 /* AppDelegate.swift */; };
 		AD750BB3226FEF8200140400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD750BB1226FEF8200140400 /* LaunchScreen.storyboard */; };
 		AD750BBE226FEF8200140400 /* PerfilometroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD750BBD226FEF8200140400 /* PerfilometroTests.swift */; };
@@ -28,7 +27,7 @@
 		ADFDD0A222C7CEE40033BB91 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFDD0A122C7CEE40033BB91 /* Color.xcassets */; };
 		ADFDD0A422C7CF0C0033BB91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADFDD0A322C7CF0C0033BB91 /* Assets.xcassets */; };
 		ADFDD0A622C7D8D30033BB91 /* UIMapViewDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFDD0A522C7D8D30033BB91 /* UIMapViewDesignable.swift */; };
-		C94999A6382E23293757F1B1 /* Pods_PerfilometroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B978D978C7180DCAAF5DD39 /* Pods_PerfilometroUITests.framework */; };
+		B6C8105D7E64AD2AD2C6F403 /* Pods_PerfilometroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBA41DBC5DCF03B41D84E1CE /* Pods_PerfilometroTests.framework */; };
 		D454D78922CE9D480000DDAE /* MQTT_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D454D78822CE9D480000DDAE /* MQTT_Manager.swift */; };
 		D4AA715F22B3DA440095B252 /* SingleResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA715E22B3DA440095B252 /* SingleResultViewController.swift */; };
 		D4AA716222B3DFD60095B252 /* road.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AA716122B3DFD60095B252 /* road.swift */; };
@@ -61,6 +60,7 @@
 		D4DC653E22987ACC00A74C2D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DC653722987ACC00A74C2D /* TabBarViewController.swift */; };
 		D4DC653F22987ACC00A74C2D /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DC653822987ACC00A74C2D /* TabBarViewController.storyboard */; };
 		D4DC654222987B0100A74C2D /* FindRouteView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DC654122987B0100A74C2D /* FindRouteView.storyboard */; };
+		EF4E3618DBA90F22CE61087F /* Pods_PerfilometroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9424F6FD702A0A9EEA68CD /* Pods_PerfilometroUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,14 +81,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		197DF9413F34ED495534DFEB /* Pods-Perfilometro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perfilometro.debug.xcconfig"; path = "Target Support Files/Pods-Perfilometro/Pods-Perfilometro.debug.xcconfig"; sourceTree = "<group>"; };
-		2B978D978C7180DCAAF5DD39 /* Pods_PerfilometroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfilometroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E4FA9A78269D87623B1B9F8 /* Pods_Perfilometro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Perfilometro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		510A130B4C03E24DD9F4FCA2 /* Pods-PerfilometroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroUITests.release.xcconfig"; path = "Target Support Files/Pods-PerfilometroUITests/Pods-PerfilometroUITests.release.xcconfig"; sourceTree = "<group>"; };
-		55CB4721C2C786AC04A350C3 /* Pods-PerfilometroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroUITests.debug.xcconfig"; path = "Target Support Files/Pods-PerfilometroUITests/Pods-PerfilometroUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		81FB17EEA8A68F253B9F6729 /* Pods_PerfilometroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfilometroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D847400A0C49932FB61FAFA /* Pods-Perfilometro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perfilometro.release.xcconfig"; path = "Target Support Files/Pods-Perfilometro/Pods-Perfilometro.release.xcconfig"; sourceTree = "<group>"; };
-		A70CD9365210A987AE704D64 /* Pods-PerfilometroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroTests.debug.xcconfig"; path = "Target Support Files/Pods-PerfilometroTests/Pods-PerfilometroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F85294D9822AF138F717417 /* Pods-PerfilometroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroTests.release.xcconfig"; path = "Target Support Files/Pods-PerfilometroTests/Pods-PerfilometroTests.release.xcconfig"; sourceTree = "<group>"; };
+		2204A42C5DA521E6AB589A47 /* Pods_Perfilometro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Perfilometro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25F81C14FECCC13CDD802812 /* Pods-Perfilometro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perfilometro.debug.xcconfig"; path = "Target Support Files/Pods-Perfilometro/Pods-Perfilometro.debug.xcconfig"; sourceTree = "<group>"; };
+		2D9424F6FD702A0A9EEA68CD /* Pods_PerfilometroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfilometroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CC0AA5BE006C2BC6976573 /* Pods-PerfilometroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroUITests.release.xcconfig"; path = "Target Support Files/Pods-PerfilometroUITests/Pods-PerfilometroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9CEEE3A57855053D5C2A9C9D /* Pods-PerfilometroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroUITests.debug.xcconfig"; path = "Target Support Files/Pods-PerfilometroUITests/Pods-PerfilometroUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD36DD2522C8EAAA00374DCB /* SingleResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResultsTableViewController.swift; sourceTree = "<group>"; };
 		AD36DD2722C93EB700374DCB /* AnimatedSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSwitch.swift; sourceTree = "<group>"; };
 		AD750BA5226FEF8000140400 /* Perfilometro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Perfilometro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +113,7 @@
 		ADFDD0A122C7CEE40033BB91 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		ADFDD0A322C7CF0C0033BB91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADFDD0A522C7D8D30033BB91 /* UIMapViewDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMapViewDesignable.swift; sourceTree = "<group>"; };
-		CCE464E4C9F2D94858D1016D /* Pods-PerfilometroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroTests.release.xcconfig"; path = "Target Support Files/Pods-PerfilometroTests/Pods-PerfilometroTests.release.xcconfig"; sourceTree = "<group>"; };
+		CBA41DBC5DCF03B41D84E1CE /* Pods_PerfilometroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PerfilometroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D445D0612295DE33007960E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D454D78822CE9D480000DDAE /* MQTT_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTT_Manager.swift; sourceTree = "<group>"; };
 		D4AA715E22B3DA440095B252 /* SingleResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleResultViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +148,8 @@
 		D4DC653722987ACC00A74C2D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D4DC653822987ACC00A74C2D /* TabBarViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarViewController.storyboard; sourceTree = "<group>"; };
 		D4DC654122987B0100A74C2D /* FindRouteView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FindRouteView.storyboard; sourceTree = "<group>"; };
+		F5A3C959D60F4630BCDDEF22 /* Pods-PerfilometroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerfilometroTests.debug.xcconfig"; path = "Target Support Files/Pods-PerfilometroTests/Pods-PerfilometroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F63BEC0CF983746A36F4A99B /* Pods-Perfilometro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Perfilometro.release.xcconfig"; path = "Target Support Files/Pods-Perfilometro/Pods-Perfilometro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25AD9217A5F8BAEFEF6EEEC2 /* Pods_Perfilometro.framework in Frameworks */,
+				AD3970E4E584F1B9EA963A9D /* Pods_Perfilometro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B42F3571C0280B68CD2011A /* Pods_PerfilometroTests.framework in Frameworks */,
+				B6C8105D7E64AD2AD2C6F403 /* Pods_PerfilometroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C94999A6382E23293757F1B1 /* Pods_PerfilometroUITests.framework in Frameworks */,
+				EF4E3618DBA90F22CE61087F /* Pods_PerfilometroUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,14 +183,24 @@
 		49C2AD724EA418ECA9F8BFA0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				197DF9413F34ED495534DFEB /* Pods-Perfilometro.debug.xcconfig */,
-				8D847400A0C49932FB61FAFA /* Pods-Perfilometro.release.xcconfig */,
-				A70CD9365210A987AE704D64 /* Pods-PerfilometroTests.debug.xcconfig */,
-				CCE464E4C9F2D94858D1016D /* Pods-PerfilometroTests.release.xcconfig */,
-				55CB4721C2C786AC04A350C3 /* Pods-PerfilometroUITests.debug.xcconfig */,
-				510A130B4C03E24DD9F4FCA2 /* Pods-PerfilometroUITests.release.xcconfig */,
+				25F81C14FECCC13CDD802812 /* Pods-Perfilometro.debug.xcconfig */,
+				F63BEC0CF983746A36F4A99B /* Pods-Perfilometro.release.xcconfig */,
+				F5A3C959D60F4630BCDDEF22 /* Pods-PerfilometroTests.debug.xcconfig */,
+				0F85294D9822AF138F717417 /* Pods-PerfilometroTests.release.xcconfig */,
+				9CEEE3A57855053D5C2A9C9D /* Pods-PerfilometroUITests.debug.xcconfig */,
+				75CC0AA5BE006C2BC6976573 /* Pods-PerfilometroUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		94FEB077FB810315CCC2F8B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2204A42C5DA521E6AB589A47 /* Pods_Perfilometro.framework */,
+				CBA41DBC5DCF03B41D84E1CE /* Pods_PerfilometroTests.framework */,
+				2D9424F6FD702A0A9EEA68CD /* Pods_PerfilometroUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		AD750B9C226FEF8000140400 = {
@@ -202,7 +212,7 @@
 				AD750BA6226FEF8000140400 /* Products */,
 				D4DC65232298791C00A74C2D /* Recovered References */,
 				49C2AD724EA418ECA9F8BFA0 /* Pods */,
-				EC7500C4CCBBA2DB80FC5743 /* Frameworks */,
+				94FEB077FB810315CCC2F8B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -477,16 +487,6 @@
 			path = FindRouteView;
 			sourceTree = "<group>";
 		};
-		EC7500C4CCBBA2DB80FC5743 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3E4FA9A78269D87623B1B9F8 /* Pods_Perfilometro.framework */,
-				81FB17EEA8A68F253B9F6729 /* Pods_PerfilometroTests.framework */,
-				2B978D978C7180DCAAF5DD39 /* Pods_PerfilometroUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -494,12 +494,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD750BCD226FEF8200140400 /* Build configuration list for PBXNativeTarget "Perfilometro" */;
 			buildPhases = (
-				6B710E7A5609663E949CB089 /* [CP] Check Pods Manifest.lock */,
+				3AA311E50F8A05A573474C62 /* [CP] Check Pods Manifest.lock */,
 				AD750BA1226FEF8000140400 /* Sources */,
 				AD750BA2226FEF8000140400 /* Frameworks */,
 				AD750BA3226FEF8000140400 /* Resources */,
-				F5818BE1B00CA79C9C9B7AFD /* [CP] Embed Pods Frameworks */,
-				4A391690F11D91A24B10E3A4 /* [CP] Copy Pods Resources */,
+				30A38B4DDE1735C0234AD5B9 /* [CP] Embed Pods Frameworks */,
+				D717DF41D75306FD91E8C4AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -514,7 +514,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD750BD0226FEF8200140400 /* Build configuration list for PBXNativeTarget "PerfilometroTests" */;
 			buildPhases = (
-				CE3DD96BD8FF9810E07F84A7 /* [CP] Check Pods Manifest.lock */,
+				6D2862E244760671B7B62981 /* [CP] Check Pods Manifest.lock */,
 				AD750BB5226FEF8200140400 /* Sources */,
 				AD750BB6226FEF8200140400 /* Frameworks */,
 				AD750BB7226FEF8200140400 /* Resources */,
@@ -533,7 +533,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD750BD3226FEF8200140400 /* Build configuration list for PBXNativeTarget "PerfilometroUITests" */;
 			buildPhases = (
-				5E33B7B4B34B24354FE8CD4D /* [CP] Check Pods Manifest.lock */,
+				0AF6427A1BDA326675E478FA /* [CP] Check Pods Manifest.lock */,
 				AD750BC0226FEF8200140400 /* Sources */,
 				AD750BC1226FEF8200140400 /* Frameworks */,
 				AD750BC2226FEF8200140400 /* Resources */,
@@ -628,24 +628,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A391690F11D91A24B10E3A4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5E33B7B4B34B24354FE8CD4D /* [CP] Check Pods Manifest.lock */ = {
+		0AF6427A1BDA326675E478FA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -667,7 +650,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6B710E7A5609663E949CB089 /* [CP] Check Pods Manifest.lock */ = {
+		30A38B4DDE1735C0234AD5B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AA311E50F8A05A573474C62 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -689,7 +689,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CE3DD96BD8FF9810E07F84A7 /* [CP] Check Pods Manifest.lock */ = {
+		6D2862E244760671B7B62981 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -711,21 +711,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F5818BE1B00CA79C9C9B7AFD /* [CP] Embed Pods Frameworks */ = {
+		D717DF41D75306FD91E8C4AF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Perfilometro/Pods-Perfilometro-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -938,7 +938,7 @@
 		};
 		AD750BCE226FEF8200140400 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 197DF9413F34ED495534DFEB /* Pods-Perfilometro.debug.xcconfig */;
+			baseConfigurationReference = 25F81C14FECCC13CDD802812 /* Pods-Perfilometro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -949,7 +949,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.peperro.Perfilometro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peperro.Perfilometro2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -958,7 +958,7 @@
 		};
 		AD750BCF226FEF8200140400 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D847400A0C49932FB61FAFA /* Pods-Perfilometro.release.xcconfig */;
+			baseConfigurationReference = F63BEC0CF983746A36F4A99B /* Pods-Perfilometro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -969,7 +969,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.peperro.Perfilometro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.peperro.Perfilometro2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -978,7 +978,7 @@
 		};
 		AD750BD1226FEF8200140400 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A70CD9365210A987AE704D64 /* Pods-PerfilometroTests.debug.xcconfig */;
+			baseConfigurationReference = F5A3C959D60F4630BCDDEF22 /* Pods-PerfilometroTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1001,7 +1001,7 @@
 		};
 		AD750BD2226FEF8200140400 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCE464E4C9F2D94858D1016D /* Pods-PerfilometroTests.release.xcconfig */;
+			baseConfigurationReference = 0F85294D9822AF138F717417 /* Pods-PerfilometroTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1024,7 +1024,7 @@
 		};
 		AD750BD4226FEF8200140400 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55CB4721C2C786AC04A350C3 /* Pods-PerfilometroUITests.debug.xcconfig */;
+			baseConfigurationReference = 9CEEE3A57855053D5C2A9C9D /* Pods-PerfilometroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1046,7 +1046,7 @@
 		};
 		AD750BD5226FEF8200140400 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 510A130B4C03E24DD9F4FCA2 /* Pods-PerfilometroUITests.release.xcconfig */;
+			baseConfigurationReference = 75CC0AA5BE006C2BC6976573 /* Pods-PerfilometroUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

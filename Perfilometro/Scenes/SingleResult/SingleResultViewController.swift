@@ -65,12 +65,12 @@ class SingleResultViewController: UIViewController, SCNSceneRendererDelegate {
 
     func setSensorsValue(road: Road) {
         if road != nil {
-            data.sensor1Values = road.lazers[0]
-            data.sensor2Values = road.lazers[1]
-            data.sensor3Values = road.lazers[2]
-            data.sensor4Values = road.lazers[3]
-            data.sensor5Values = road.lazers[4]
-            
+//            data.sensor1Values = road.lazers[0]
+//            data.sensor2Values = road.lazers[1]
+//            data.sensor3Values = road.lazers[2]
+//            data.sensor4Values = road.lazers[3]
+//            data.sensor5Values = road.lazers[4]
+//            
 //            data.sensor6Values = road.lazers[5]
 //            data.sensor7Values = road.lazers[6]
 //            data.sensor8Values = road.lazers[7]

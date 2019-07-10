@@ -54,31 +54,40 @@ class RouteResultsViewController: UITableViewController, RouteResultsDisplayLogi
         super.viewDidLoad()
 //        self.doSomething()
         setNibUp()
-        getRoads()
+//        getRoads()
+        createRoads()
     }
 
     // MARK: Do something
     
-    private func getRoads() {
-        NetworkManager.shared.request(endpoint: RoadEnpoint.getRoads) { response in
-            switch response.result {
-            case .success(let data):
-                let json = JSON(data)
-                let content = json["data"]
-                for item in content["roads"].arrayValue {
-                    let road = Road(from: item)
-                    self.roads.append(road)
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                    }
-                }
-                
-            case .failure(let error):
-                print(error)
-            }
-
-        }
+    private func createRoads() {
+        let road1 = Road(name: "Teste FGA1", date: String(describing: Date()))
+        let road2 = Road(name: "Teste FGA2", date:String(describing: Date()))
+        let road3 = Road(name: "Teste FGA3", date: String(describing: Date()))
+        roads.append(road1)
+        roads.append(road2)
+        roads.append(road3)
     }
+//    private func getRoads() {
+//        NetworkManager.shared.request(endpoint: RoadEnpoint.getRoads) { response in
+//            switch response.result {
+//            case .success(let data):
+//                let json = JSON(data)
+//                let content = json["data"]
+//                for item in content["roads"].arrayValue {
+//                    let road = Road(from: item)
+//                    self.roads.append(road)
+//                    DispatchQueue.main.async {
+//                        self.tableView.reloadData()
+//                    }
+//                }
+//                
+//            case .failure(let error):
+//                print(error)
+//            }
+//
+//        }
+//    }
 
     func doSomething() {
 //        self.fetchAllRooms { (roads) in
